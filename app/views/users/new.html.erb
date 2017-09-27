@@ -1,0 +1,55 @@
+<h2>Sign up!</h2>
+<% if flash[:alert] %>
+<p id ="notice"><%= flash[:alert] %>
+  </p>
+  <% end %>
+
+<%= form_for @user do |f| %>
+    <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+    </p>
+
+    <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+    </p>
+
+    <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+    </p>
+
+    <p>Password must be atleast 8 characters long<br>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+    </p>
+
+    <p>
+    <%= f.label :password_confirmation %><br><br>
+    <%= f.password_field :password_confirmation %>
+    </p>
+
+    <p>
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+    </p>
+
+    <p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+    </p>
+
+    <p>
+    <%= f.label :license_number %><br>
+    <%= f.text_field :license_number %>
+    </p>
+
+    <p>
+    <%= f.label :credit_card_number %><br>
+    <%= f.text_field :credit_card_number %>
+    </p>
+    <%= f.hidden_field :role, :value => 'Customer' %>
+
+<%= f.submit "Create account" %>
+<% end %>

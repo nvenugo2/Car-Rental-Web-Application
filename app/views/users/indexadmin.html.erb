@@ -1,0 +1,19 @@
+<h1>Listing all admins</h1>
+<% if flash[:alert] %>
+<p id ="notice"><%= flash[:alert] %>
+  </p>
+  <% end %>
+
+  <% if !@users.nil? then @users.each do |user| %>
+        <% unless current_user.id == user.id %>
+            <%= user.first_name %> <%= user.last_name %>
+            <%= link_to 'More details', user_path(user) %>
+            <%= link_to 'Delete admin', user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
+                <% end %>
+            <% end %>
+
+  <% end %>
+
+<%  if current_user.role == 'Admin' %>
+    <%= link_to "Back", '/admin' %>
+<% end %>

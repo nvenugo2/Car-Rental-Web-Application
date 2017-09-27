@@ -1,0 +1,49 @@
+<h3>New reservation</h3>
+<% if flash[:alert] %>
+<p id ="notice"><%= flash[:alert] %>
+    </p>
+    <% end %>
+
+
+<p style colour="colour:red">
+  <% if @reservation.errors.any? %>
+      <% @reservation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+    <% end %>
+<% end %>
+</p>
+
+<% if current_user.role == 'Customer' %>
+
+<%= form_for @reservation do |f| %>
+    <p></p><%= f.label :start_time %>
+    <%= f.datetime_select(:start_time, :minute_step => 30) %></p>
+    <p></p><%= f.label :end_time %>
+    <%= f.datetime_select(:end_time, :minute_step => 30) %><p>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.hidden_field :car_id, :value => (session[:car_id]).to_i %>
+    <%= f.submit "Book!" %>
+<% end %>
+    <%= link_to "Back", '/cars' %>
+<% else %>
+    <h5>For customer</h5>
+
+    <%= form_for @reservation do |f| %>
+        <p><h3>Select car</h3>
+        <%= f.collection_select(:car_id,Car.all,:id,:car_number_name) %></p>
+        <p><h3>Select user</h3>
+        <%= f.collection_select(:user_id,User.where("role='Customer'"),:id, :name ) %></p>
+        <p><%= f.label :start_time %>
+          <%= f.datetime_select(:start_time, :minute_step => 30) %></p>
+        <p><%= f.label :end_time %>
+          <%= f.datetime_select(:end_time, :minute_step => 30) %></p>
+        <%= f.submit "Book!" %>
+    <% end %>
+    <%  if current_user.role == 'Admin' %>
+        <%= link_to "Back", '/admin' %>
+    <% end %>
+    <%  if current_user.role == 'Super admin' %>
+        <%= link_to "Back", '/superadmin' %>
+    <% end %>
+<% end %>
+

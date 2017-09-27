@@ -1,0 +1,20 @@
+<% if current_user.role == 'Customer' %>
+<h2>Please enter your suggestions:</h2>
+    <% else %>
+    <h2>Please enter your specifications:</h2>
+    <% end %>
+<%= form_for @car do |f| %>
+    <p>Manufacturer: <%= f.text_field :manufacturer %></p>
+    <p>Model: <%= f.text_field :model %></p>
+    <p>Style: <%= f.text_field :style %></p>
+    <p>Suggested hourly rate: <%= f.text_field :hourly_rate %></p>
+    <p>Suggested location: <%= f.text_area :location %></p>
+    <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
+    <p>License plate <%= f.text_field :license_plate %></p>
+    <%= f.hidden_field :status, :value => 'Approved' %>
+        <%= f.submit "Create car" %>
+        <% else %>
+        <%= f.hidden_field :status, :value => 'Unpproved' %>
+    <%= f.submit "Suggest car" %>
+        <% end %>
+<% end %>

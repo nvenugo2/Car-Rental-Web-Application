@@ -1,0 +1,56 @@
+<% if flash[:alert] %>
+<p id ="notice"><%= flash[:alert] %>
+  </p>
+  <% end %>
+
+  <p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>Email id:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>License number:</b>
+  <%= @user.license_number %>
+</p>
+
+<p>
+  <b>Credit card number:</b>
+  <%= @user.credit_card_number %>
+</p>
+
+<% if @user.role == "Customer" %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<% end %>
+
+<% if @user.role == "Customer" %>
+    <%= link_to 'Back', '/indexcustomers' %>
+<% else %>
+    <%= link_to 'Back', '/indexadmin' %>
+<% end %>
+
+<% if @user.role != 'Customer' %>
+    <% if @user.role == 'Customer' %>
+    <%= link_to "Make admin", controller: :users, action: :makeadmin, id: @user, :method => :put  %></p>
+        <% end %>
+     <% if @user.role == 'Admin' %>
+            <%= link_to "Make super admin", controller: :users, action: :makesuperadmin, id: @user, :method => :put  %></p>
+        <% end %>
+    <% unless @user.role == 'Super admin' %>
+<%= link_to 'Destroy', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+<% end %>

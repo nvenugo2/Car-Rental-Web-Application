@@ -1,0 +1,20 @@
+<h1>Listing all cars</h1>
+
+<% @cars.each do |car| %>
+    <h4><%= car.manufacturer %> <%= car.model %>  <%= link_to "More details", car_path(car) %></h4>
+<% end %>
+
+<% if current_user.role == 'Customer' %>
+<%= link_to "Suggest a car?", new_car_path %>
+    <%= link_to "Back", '/customer' %>
+<% end %>
+<% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
+<%= link_to "Add a new car?", new_car_path %>
+<%= link_to "Cars for approval", '/carsforapproval' %>
+    <%  if current_user.role == 'Admin' %>
+        <%= link_to "Back", '/admin' %>
+    <% end %>
+    <%  if current_user.role == 'Super admin' %>
+        <%= link_to "Back", '/superadmin' %>
+    <% end %>
+<% end %>

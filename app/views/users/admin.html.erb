@@ -1,0 +1,12 @@
+<h3> Welcome <%= current_user.name %></h3>
+
+<%= link_to "List all cars", 'cars#index' %>
+<%= link_to "View all customers", '/indexcustomers' %>
+<%= link_to "View all admins", '/indexadmin' %>
+<%= link_to "View all super admins", '/indexsuperadmin' %>
+<%= link_to "Book for customer", new_reservation_path %>
+<%= link_to "Reservation history", '/reservationlog' %>
+<%= link_to "Current reservation", '/currentreservations' %>
+
+
+
