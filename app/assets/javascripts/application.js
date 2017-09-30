@@ -11,15 +11,15 @@
 // about supported directives.
 //
 // for local setup order //= require jquery
-// //= require jquery_ujs
+= require jquery_ujs
+= require bootstrap
+= require turbolinks
+= require_tree .
+
+// //For heroku server order
 // = require bootstrap
+// = require jquery
+// = require jquery_ujs
 // = require turbolinks
 // //= require_tree .
-
-//For heroku server order
-= require bootstrap
-= require jquery
-= require jquery_ujs
-= require turbolinks
-//= require_tree .
 
