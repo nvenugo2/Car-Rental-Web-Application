@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  only: [:new, :edit, :index, :show, :destroy] 
+  
 
   def indexcustomers
     @users = User.where(["role = :role", {role: 'Customer' }])
