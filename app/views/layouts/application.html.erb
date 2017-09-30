@@ -9,11 +9,16 @@
   </head>
 
   <body>
-  <% if current_user %>
-      Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
-  <% else %>
-      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-  <% end %>
-    <%= yield %>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <% if current_user %>
+        Signed in as <%= current_user.first_name %> | <li><%= link_to "Logout", '/logout' %></li>
+        <% else %>
+        <li><%= link_to 'Login', '/login' %></li> 
+        <li><%= link_to 'Signup', '/signup' %></li>
+        <% end %>
+      </ul>
+      <%= yield %>
+    </div>
   </body>
 </html>
