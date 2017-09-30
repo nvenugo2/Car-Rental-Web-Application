@@ -42,7 +42,7 @@ class UsersController < ApplicationController
  
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
-      redirect_to '/login', notice: "Thank you for signing up!"
+      #redirect_to '/login', notice: "Thank you for signing up!"
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
