@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  only: [:new, :edit, :index, :show, :destroy] 
-  
+
 
   def indexcustomers
     @users = User.where(["role = :role", {role: 'Customer' }])
@@ -36,10 +35,17 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
+    respond_to do |format|
+      if @user.save
+        # Tell the UserMailer to send a welcome Email after save
+        UserMailer.welcome_email(@user).deliver
+ 
+        format.html { redirect_to(@user, :notice => 'User was successfully created.') }
+        format.xml  { render :xml => @user, :status => :created, :location => @user }
       redirect_to '/login', notice: "Thank you for signing up!"
-    else
-      render "new"
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
     end
   end
 
@@ -74,8 +80,10 @@ class UsersController < ApplicationController
     redirect_to '/indexcustomers'
   end
 
+
   private
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation, :role, :first_name, :last_name, :age, :address, :license_number, :credit_card_number)
   end
+end
 end
