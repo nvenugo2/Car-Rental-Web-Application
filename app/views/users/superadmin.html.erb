@@ -1,9 +1,12 @@
 <h3> Welcome <%= current_user.name %></h3>
-
-<%= link_to "List all cars", '/cars' %>
-<%= link_to "View all customers", '/indexcustomers' %>
-<%= link_to "View all admins", '/indexadmin' %>
-<%= link_to "View all super admins", '/indexsuperadmin' %>
-<%= link_to "Book for customer", new_reservation_path %>
-<%= link_to "Reservation history", '/reservationlog' %>
-<%= link_to "Current reservation", '/currentreservations' %>
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li><%= link_to "List all cars", '/cars' %></li>
+		<li><%= link_to "View all customers", '/indexcustomers' %></li>
+		<li><%= link_to "View all admins", '/indexadmin' %></li>
+		<li><%= link_to "View all super admins", '/indexsuperadmin' %></li>
+		<li><%= link_to "Book for customer", new_reservation_path %></li>
+		<li><%= link_to "Reservation history", '/reservationlog' %></li>
+		<li><%= link_to "Current reservation", '/currentreservations' %></li>
+	</ul>
+</div>

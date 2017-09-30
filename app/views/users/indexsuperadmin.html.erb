@@ -5,10 +5,10 @@
   <% end %>
 
 <% if !@users.nil? then @users.each do |user| %>
-        <% unless current_user.id == user.id %>
+        <p><% unless current_user.id == user.id %>
             <%= user.first_name %> <%= user.last_name %>
             <%= link_to 'More details', user_path(user) %>
-        <% end %>
+        <% end %></p>
     <% end %>
 
 <% end %>
@@ -17,5 +17,5 @@
     <%= link_to "Back", '/admin' %>
 <% end %>
 <%  if current_user.role == 'Super admin' %>
-    <%= link_to "Back", '/superadmin' %>
+    <br><%= link_to "Back", '/superadmin' %>
 <% end %>
