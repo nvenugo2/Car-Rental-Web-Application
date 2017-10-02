@@ -35,7 +35,9 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new', as: :new_session
   post  '/sessions' => 'sessions#create'
   get '/logout', to: 'sessions#destroy', as: :logout
-  get '/set_session' => 'sessions#set_session'
+  get '/set_session' => 'sessions#set_session'#
+  get '/about' => 'sessions#about'
+  get '/contact' => 'sessions#contact'
 
   resources :reservations, :except => [:new, :create, :edit, :update, :show, :destroy] do
     get :checkout, on: :member
@@ -48,4 +50,6 @@ Rails.application.routes.draw do
   get '/currentreservations' => 'reservations#currentreservations'
 
   root 'sessions#new'
+
+  get 'creatives/index'
 end

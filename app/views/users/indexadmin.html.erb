@@ -7,8 +7,8 @@
   <% if !@users.nil? then @users.each do |user| %>
         <% unless current_user.id == user.id %>
             <p><%= user.first_name %> <%= user.last_name %>    
-            <%= link_to 'More details', user_path(user) %>
-            <%= link_to 'Delete admin', user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to "<button>More details</button>".html_safe, user_path(user) %>
+            <%= link_to "<button>Delete admin</button>".html_safe, user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
                 <% end %></p>
             <% end %>
 
@@ -17,3 +17,4 @@
 <%  if current_user.role == 'Admin' %>
     <br><%= link_to "Back", '/admin' %>
 <% end %>
+
