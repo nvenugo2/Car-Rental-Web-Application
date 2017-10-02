@@ -53,4 +53,6 @@
     <% unless @user.role == 'Super admin' %>
 <%= link_to 'Destroy', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' } %>
         <% end %>
+        <br>
+        <%= link_to "<button>  Back  </button>".html_safe, :back %>
 <% end %>

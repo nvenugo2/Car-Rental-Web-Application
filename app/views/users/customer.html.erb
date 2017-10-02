@@ -1,5 +1,5 @@
 <h3> Welcome <%= current_user.name %></h3>
 
-<%= link_to "List all cars", '/cars' %>
-<%= link_to "Reservations", '/reservationlog' %>
-<%= link_to "Current reservation", '/currentreservations' %>
+<%= link_to "<button>List all cars/button>".html_safe, '/cars' %>
+<%= link_to "<button>Reservations/button>".html_safe, '/reservationlog' %>
+<%= link_to "<button>Current reservation</button>".html_safe, '/currentreservations' %>

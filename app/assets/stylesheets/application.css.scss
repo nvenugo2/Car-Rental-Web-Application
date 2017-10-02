@@ -4,6 +4,17 @@
 
 body{background:#000}
 
+@font-face {
+  font-family: 'Delicious';
+  font-weight: bold;
+  src: url('/assets/Delicious-Bold.otf');
+}
+
+html {font-family: "Delicious";}
+
+* {
+  font-family: "Delicious";
+ }
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

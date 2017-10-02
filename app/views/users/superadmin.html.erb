@@ -1,12 +1,12 @@
 <h3> Welcome <%= current_user.name %></h3>
 <div class="container">
 	<ul class="nav nav-tabs">
-		<li><%= link_to "List all cars", '/cars' %></li>
-		<li><%= link_to "View all customers", '/indexcustomers' %></li>
-		<li><%= link_to "View all admins", '/indexadmin' %></li>
-		<li><%= link_to "View all super admins", '/indexsuperadmin' %></li>
-		<li><%= link_to "Book for customer", new_reservation_path %></li>
-		<li><%= link_to "Reservation history", '/reservationlog' %></li>
-		<li><%= link_to "Current reservation", '/currentreservations' %></li>
+		<li><%= link_to "<button>List all cars</button>".html_safe, '/cars' %></li>
+		<li><%= link_to "<button>View all customers</button>".html_safe, '/indexcustomers' %></li>
+		<li><%= link_to "<button>View all admins</button>".html_safe, '/indexadmin' %></li>
+		<li><%= link_to "<button>View all super admins</button>"_html_safe, '/indexsuperadmin' %></li>
+		<li><%= link_to "<button>Book for customer</button>".html_safe, new_reservation_path %></li>
+		<li><%= link_to "<button>Reservation history</button>".html_safe, '/reservationlog' %></li>
+		<li><%= link_to "<button>Current reservation</button>".html_safe, '/currentreservations' %></li>
 	</ul>
 </div>
