@@ -56,3 +56,5 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'autoprefixer-rails', '~> 7.1'
 
 gem 'frontend-generators'
+
+gem 'figaro'

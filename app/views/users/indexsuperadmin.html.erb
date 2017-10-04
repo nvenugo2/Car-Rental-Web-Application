@@ -7,7 +7,7 @@
 <% if !@users.nil? then @users.each do |user| %>
         <p><% unless current_user.id == user.id %>
             <%= user.first_name %> <%= user.last_name %>
-            <%= link_to "<button>More details</button>".html_safe, user_path(user) %>
+            <%= link_to "More details", user_path(user), :class 'btn btn-primary' %>
         <% end %></p>
     <% end %>
 
@@ -17,5 +17,5 @@
     <%= link_to "Back", '/admin' %><br>
 <% end %>
 <%  if current_user.role == 'Super admin' %>
-    <br><%= link_to "Back", '/superadmin' %>
+    <br><%= link_to "Back", '/superadmin', , :class 'btn btn-primary' %>
 <% end %>

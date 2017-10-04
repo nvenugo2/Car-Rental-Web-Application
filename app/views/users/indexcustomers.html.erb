@@ -14,15 +14,15 @@
                   <%= link_to "Make admin", controller: :users, action: :makeadmin, id: user, :method => :put  %></p>
                   <% end %>
             <%  if current_user.role == 'Super admin' %>
-            <%= link_to "Make superadmin", controller: :users, action: :makesuperadmin, id: user, :method => :put  %></p>
+            <%= link_to "Make superadmin", controller: :users, action: :makesuperadmin, id: user, :method => :put, :class 'btn btn-primary'  %></p>
                   <% end %>
       <% end %>
 <% end %>
 <%  if current_user.role == 'Admin' %>
-    <%= link_to "Back", '/admin' %>
+    <%= link_to "Back", '/admin', :class 'btn btn-primary' %>
 <% end %>
 <%  if current_user.role == 'Super admin' %>
-    <%= link_to "Back", '/superadmin' %>
+    <%= link_to "Back", '/superadmin', :class 'btn btn-primary' %>
 <% end %>
 
 
