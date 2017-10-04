@@ -9,4 +9,6 @@ class Car < ApplicationRecord
   def car_number_name
     "#{manufacturer}: #{model} - #{license_plate}"
   end
+
+
 end

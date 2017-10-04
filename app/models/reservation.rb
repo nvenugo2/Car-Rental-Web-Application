@@ -23,7 +23,7 @@ class Reservation < ApplicationRecord
   end
 
   def time_difference_more_than_1
-    if ((((end_time - start_time)/1.hour).to_i) < 1 && (((end_time - start_time)/1.hour).to_i) > 0)
+    if ((((end_time - start_time)/1.minute).to_i) < 60 && (((end_time - start_time)/1.minute).to_i) > 0)
       errors.add(:end_time, "and start time - minimum booking is 1 hour")
     end
   end
@@ -48,12 +48,12 @@ class Reservation < ApplicationRecord
   end
 
   def check_user_made_reservation_at_same_time
-    errors.add(:start_time, "and end time specified is not available for this car, or a reservation is already made at this time by the user.\n Please choose another timing") unless Reservation.where("(? = user_id) AND (? = 'current')", user_id, current).count == 0
+    errors.add(:start_time, "and end time can't be accepted as another car is already booked.") unless Reservation.where("(? = user_id) AND (? = current)", user_id, current).count == 0
   end
 
 
   def check_car_reservation_made_at_same_time
-    errors.add(:start_time, "and end time specified is not available for this car.\n Please choose another timing for this car or change this car") unless Reservation.where("(? = car_id) AND (start_time BETWEEN ? AND ? )AND (end_time BETWEEN ? AND ?) AND (? = 'current')", car_id, start_time, end_time,start_time, end_time, current).count == 0
+    errors.add(:start_time, "and end time specified is not available for this car.\n Please choose another timing for this car or change this car") unless Reservation.where("(? = car_id) AND (start_time BETWEEN ? AND ? )AND (end_time BETWEEN ? AND ?) AND (? = current)", car_id, start_time, end_time,start_time, end_time, current).count == 0
   end
 
 end

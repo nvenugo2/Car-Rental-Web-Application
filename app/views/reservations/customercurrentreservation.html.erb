@@ -1,0 +1,29 @@
+<h3>Listing current reservation</h3>
+
+<table style="width:60%">
+  <tr>
+    <th>Booking number  </th>
+    <th>Car </th>
+    <th>Booked by</th>
+    <th>Start time</th>
+    <th>End time</th>
+  </tr>
+
+  <% if !@custreservations.nil? then @custreservations.each do |custreservation| %>
+          <tr>
+            <td><%= custreservation.id %></td>
+            <td><%= custreservation.car.car_name %></td>
+            <td><%= custreservation.user.name %></td>
+            <td><%= custreservation.start_time %></td>
+            <td><%= custreservation.end_time %></td>
+            <% if custreservation.status == false %>
+                <td><button><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: custreservation, :method => :put %></button></td>
+            <% elsif custreservation.status == true %>
+                <td><button><%= link_to 'Check in car', controller: :reservations, action: :checkin, id: custreservation, :method => :put %></button></td>
+            <% end %>
+          </tr>
+      <% end %>
+  <% end %>
+</table>
+
+<%= link_to 'Back', '/customer' %>

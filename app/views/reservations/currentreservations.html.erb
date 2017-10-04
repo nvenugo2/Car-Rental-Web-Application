@@ -9,25 +9,22 @@
     <th>End time</th>
   </tr>
 
-  <% if !@reservations.nil? then @reservations.each do |reservation| %>
-          <tr>
-            <td><%= reservation.id %></td>
-            <td><%= reservation.car.car_name %></td>
-            <td><%= reservation.user.name %></td>
-            <td><%= reservation.start_time %></td>
-            <td><%= reservation.end_time %></td>
-            <% if reservation.status == false %>
-            <td><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: reservation, :method => :put %></td>
-                <% else %>
-                <td><%= link_to 'Check in car', controller: :reservations, action: :checkin, id: reservation, :method => :put %></td>
+      <% @reservations.each do |reservation| %>
+              <tr>
+                <td><%= reservation.id %></td>
+                <td><%= reservation.car.car_name %></td>
+                <td><%= reservation.user.name %></td>
+                <td><%= reservation.start_time %></td>
+                <td><%= reservation.end_time %></td>
+                <% if reservation.status == false %>
+                    <td><button><%= link_to 'Check out car for customer', controller: :reservations, action: :checkout, id: reservation, :method => :put %></button></td>
+                <% elsif reservation.status == true %>
+                    <td><button><%= link_to 'Check in car for customer', controller: :reservations, action: :checkin, id: reservation, :method => :put %></button></td>
                 <% end %>
-                </tr>
-      <% end %>
-  <% end %>
-</table>
-<% if current_user.role == 'Customer' %>
-    <%= link_to "Back", '/customer' %>
-<% end %>
+              </tr>
+          <% end %>
+      </table>
+
 <%  if current_user.role == 'Admin' %>
     <%= link_to "Back", '/admin' %>
 <% end %>

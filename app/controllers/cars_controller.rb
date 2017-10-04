@@ -1,6 +1,8 @@
 class CarsController < ApplicationController
   def index
-    @cars = Car.where(["status = :status", {status: 'Approved'}])
+    @search = Car.ransack(params[:q])
+    @cars = @search.result.where(["status = :status", {status: 'Approved'}])
+
   end
 
   def carsforapproval

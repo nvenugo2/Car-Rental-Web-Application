@@ -48,8 +48,6 @@ Rails.application.routes.draw do
   post '/reservations' => 'reservations#create'
   get '/reservationlog' => 'reservations#reservationlog'
   get '/currentreservations' => 'reservations#currentreservations'
-
-  root 'sessions#new'
-
-  get 'creatives/index'
+  get '/customerhistory' => 'reservations#customerhistory'
+  get '/customercurrentreservation' => 'reservations#customercurrentreservation'
 end

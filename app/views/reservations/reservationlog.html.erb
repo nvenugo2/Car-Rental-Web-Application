@@ -1,4 +1,4 @@
-<h3>Listing all reservations</h3>
+<h3>Listing reservations history</h3>
 
 <table style="width:60%">
   <tr>
@@ -9,20 +9,17 @@
     <th>End time</th>
   </tr>
 
-  <% if !@reservations.nil? then @reservations.each do |reservation| %>
-          <tr>
-            <td><%= reservation.id %></td>
-            <td><%= reservation.car.car_number_name %></td>
-            <td><%= reservation.user.name %></td>
-            <td><%= reservation.start_time %></td>
-            <td><%= reservation.end_time %></td>
-          </tr>
-      <% end %>
+  <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.id %></td>
+        <td><%= reservation.car.car_name %></td>
+        <td><%= reservation.user.name %></td>
+        <td><%= reservation.start_time %></td>
+        <td><%= reservation.end_time %></td>
+      </tr>
   <% end %>
 </table>
-<% if current_user.role == 'Customer' %>
-<%= link_to "Back", '/customer' %>
-<% end %>
+
 <%  if current_user.role == 'Admin' %>
     <%= link_to "Back", '/admin' %>
 <% end %>

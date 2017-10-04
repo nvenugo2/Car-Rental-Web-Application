@@ -1,0 +1,23 @@
+<h3>Listing all reservation history</h3>
+
+<table style="width:60%">
+  <tr>
+    <th>Booking number  </th>
+    <th>Car </th>
+    <th>Booked by</th>
+    <th>Start time</th>
+    <th>End time</th>
+  </tr>
+
+  <% @custreservations.each do |custreservation| %>
+          <tr>
+            <td><%= custreservation.id %></td>
+            <td><%= custreservation.car.car_name unless custreservation.car.nil? %></td>
+            <td><%= custreservation.user.name %></td>
+            <td><%= custreservation.start_time %></td>
+            <td><%= custreservation.end_time %></td>
+          </tr>
+      <% end %>
+</table>
+
+<%= link_to 'Back', '/customer' %>

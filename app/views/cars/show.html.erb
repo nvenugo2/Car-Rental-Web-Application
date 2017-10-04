@@ -15,3 +15,5 @@
 <%= link_to "Book this car!", new_reservation_path(:car_id => @car) %>
     <% end %>
 <% session[:car_id] = @car.id %>
+
+Car id is <%= session[:car_id] %>
