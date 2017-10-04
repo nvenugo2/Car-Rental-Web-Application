@@ -50,4 +50,5 @@ Rails.application.routes.draw do
   get '/currentreservations' => 'reservations#currentreservations'
   get '/customerhistory' => 'reservations#customerhistory'
   get '/customercurrentreservation' => 'reservations#customercurrentreservation'
+  root 'sessions#new'
 end
