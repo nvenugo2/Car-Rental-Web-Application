@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-
-@import "main";
-
-body{background:#000}
-
-@font-face {
-  font-family: 'Delicious';
-  font-weight: bold;
-  src: url('/assets/Delicious-Bold.otf');
-}
-
-html {font-family: "Delicious";}
-
-* {
-  font-family: "Delicious";
- }
-
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_self
- */
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-
-=======
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "main";
@@ -67,4 +30,3 @@ html {font-family: "Delicious";}
  *
  *= require_self
  */
->>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195
