@@ -29,6 +29,10 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.default_url_options = {:host => 'expresscarrentals.herokuapp.com', :protocol => 'http'} #I've also tried it without ":protocol => 'http'"
+ config.action_mailer.delivery_method = :smtp
+ config.action_mailer.perform_deliveries = true
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
