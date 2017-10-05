@@ -2,6 +2,7 @@
 <% if flash[:alert] %>
 <p id ="notice"><%= flash[:alert] %>
   </p>
+  <p id="notice"><%= notice%> </p>
   <% end %>
 
 <%= form_for @user do |f| %>
