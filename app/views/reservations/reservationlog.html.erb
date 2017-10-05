@@ -14,15 +14,16 @@
         <td><%= reservation.id %></td>
         <td><%= reservation.car.car_name %></td>
         <td><%= reservation.user.name %></td>
-        <td><%= reservation.start_time %></td>
-        <td><%= reservation.end_time %></td>
+        <td><%= reservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+        <td><%= reservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+
       </tr>
   <% end %>
 </table>
 
 <%  if current_user.role == 'Admin' %>
-    <%= link_to "Back", '/admin' %>
+    <%= link_to "Back", '/admin', :class => "btn btn-primary" %>
 <% end %>
 <%  if current_user.role == 'Super admin' %>
-    <%= link_to "Back", '/superadmin' %>
+    <%= link_to "Back", '/superadmin', :class => "btn btn-primary" %>
 <% end %>

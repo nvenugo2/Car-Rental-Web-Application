@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
   def index
     @search = Car.ransack(params[:q])
-    @cars = @search.result.where(["status = :status", {status: 'Approved'}])
+    @cars = @search.result(distinct: true).where(["status = :status", {status: 'Approved'}])
 
   end
 

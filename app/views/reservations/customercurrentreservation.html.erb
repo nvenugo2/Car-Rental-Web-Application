@@ -14,16 +14,16 @@
             <td><%= custreservation.id %></td>
             <td><%= custreservation.car.car_name %></td>
             <td><%= custreservation.user.name %></td>
-            <td><%= custreservation.start_time %></td>
-            <td><%= custreservation.end_time %></td>
+            <td><%= custreservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+            <td><%= custreservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
             <% if custreservation.status == false %>
-                <td><button><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: custreservation, :method => :put %></button></td>
+                <td><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: custreservation, :method => :put, :class => "btn btn-primary" %></td>
             <% elsif custreservation.status == true %>
-                <td><button><%= link_to 'Check in car', controller: :reservations, action: :checkin, id: custreservation, :method => :put %></button></td>
+                <td><%= link_to 'Check in car', controller: :reservations, action: :checkin, id: custreservation, :method => :put, :class => "btn btn-primary" %></td>
             <% end %>
           </tr>
       <% end %>
   <% end %>
 </table>
 
-<%= link_to 'Back', '/customer' %>
+<%= link_to 'Back', '/customer', :class => "btn btn-primary" %>
