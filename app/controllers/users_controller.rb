@@ -37,7 +37,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       if @user.save
       redirect_to '/login', notice: "Thank you for signing up!"
-      NotificationsMailer.welcome_email(@user).deliver
+      #NotificationsMailer.welcome_email(@user).deliver
     else
       render "new"
     end

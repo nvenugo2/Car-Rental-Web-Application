@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.6'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
@@ -40,7 +40,13 @@ gem 'ransack'
 group :development, :test do
 	gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'ffaker'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-rails', ">= 2.0.0.beta"
 end
 
 group :development do
