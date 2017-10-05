@@ -8,8 +8,11 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
       @reservation.car.update_attribute(:carstatus, 'Reserved')
+<<<<<<< HEAD
       PickupfailureJob.set(wait_until: (@reservation.start_time + 30.minutes)).perform_later(@reservation)
       ReturnfailureJob.set(wait_until: @reservation.end_time).perform_later(@reservation)
+=======
+>>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195
       if current_user.role == 'Customer'
       redirect_to '/cars'
       elsif current_user.role == 'Admin'

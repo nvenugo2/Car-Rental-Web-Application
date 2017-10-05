@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,3 +51,57 @@
 
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ExpressCars</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    "application.css", media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application.js", 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+        <div class="container">
+      <ul class="nav nav-tabs">
+        <% if current_user %>
+        Signed in as <%= current_user.first_name %> | <li><%= link_to "Logout", '/logout' %></li>
+        <% else %>
+        <li><%= link_to 'Login', '/login' %></li> 
+        <li><%= link_to 'Signup', '/signup' %></li>
+        <li><%= link_to 'Contact Us', '/contact' %></li>
+        <% end %>
+      </ul>
+      
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Express Car Rental</h1>
+        <p>Find a ride near you. Dont let the journey stop.</p>
+        <p><a class="btn btn-primary btn-lg" href="/about" role="button">About Us &raquo;</a></p>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+
+
+      <!-- Example row of columns -->
+      
+      <%= yield %>
+      <hr>
+
+      <footer>
+        <p>&copy; Ruby on Rails</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+  </body>
+</html>
+>>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195

@@ -1,11 +1,19 @@
 <h1>Listing all cars</h1>
 
 <%= search_form_for @search do |f| %>
+<<<<<<< HEAD
     <p>Manufacturer: <%= f.collection_select :manufacturer_cont, Car.select("Manufacturer").where(["status = :status", {status: 'Approved'}]).uniq, :manufacturer, :manufacturer, {:include_blank => "Please select manufacturer"} %></p>
     <p>Model: <%= f.collection_select :model_cont, Car.select("Model").where(["status = :status", {status: 'Approved'}]).uniq, :model, :model, {:include_blank => "Please select model"} %></p>
     <p>Style: <%= f.collection_select :style_cont, Car.select("Style").where(["status = :status", {status: 'Approved'}]).uniq, :style, :style, {:include_blank => "Please select style"} %></p>
     <p>Location: <%= f.collection_select :location_cont, Car.select("Location").where(["status = :status", {status: 'Approved'}]).uniq, :location, :location, {:include_blank => "Please select location"} %></p>
     <p>Status: <%= f.collection_select :carstatus_cont, Car.select("Carstatus").where(["status = :status", {status: 'Approved'}]).uniq, :carstatus, :carstatus, {:include_blank => "Please select car status"} %></p>
+=======
+    <p>Manufacturer: <%= f.collection_select :manufacturer_cont, Car.select("Manufacturer").uniq, :manufacturer, :manufacturer, {:include_blank => "Please select manufacturer"} %></p>
+    <p>Model: <%= f.collection_select :model_cont, Car.select("Model").uniq, :model, :model, {:include_blank => "Please select model"} %></p>
+    <p>Style: <%= f.collection_select :style_cont, Car.select("Style").uniq, :style, :style, {:include_blank => "Please select style"} %></p>
+    <p>Location: <%= f.collection_select :location_cont, Car.select("Location").uniq, :location, :location, {:include_blank => "Please select location"} %></p>
+    <p>Status: <%= f.collection_select :carstatus_cont, Car.select("Carstatus").uniq, :carstatus, :carstatus, {:include_blank => "Please select car status"} %></p>
+>>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195
     <%= f.submit "Search", :class => "btn btn-primary" %>
 <% end %>
 
