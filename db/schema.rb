@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20170927173825) do
     t.string   "status"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.string   "carstatus"
   end
 
   create_table "reservations", force: :cascade do |t|
