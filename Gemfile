@@ -51,16 +51,16 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 gem 'autoprefixer-rails', '~> 7.1'
 
 gem 'figaro'
 
-<<<<<<< HEAD
-gem 'bootstrap-sass', '3.3.6'
+# <<<<<<< HEAD
+# gem 'bootstrap-sass', '3.3.6'
 
 
-=======
-gem 'bootstrap-sass', '3.3.6'
->>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195
+# =======
+# gem 'bootstrap-sass', '3.3.6'
+# >>>>>>> d23b9be5dac37ad7fff86fe2ccbc4aaf849ac195
