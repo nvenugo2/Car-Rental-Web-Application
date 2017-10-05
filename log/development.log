@@ -38125,3 +38125,5 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.css.scss to D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.scss. (called from load at C:/RailsInstaller/Ruby2.2.0/bin/rake:23)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.css.scss to D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.scss. (called from load at C:/RailsInstaller/Ruby2.2.0/bin/rake:23)
