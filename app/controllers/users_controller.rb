@@ -37,7 +37,6 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
       if @user.save
       redirect_to '/login', notice: "Thank you for signing up!"
-      NotificationsMailer.welcome_email(@user).deliver
     else
       render "new"
     end
@@ -71,13 +70,18 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     role = @user.role
+    unless Reservation.where("(? = user_id) AND (? = current)", @user.id, true).count == 0
+      flash[:notice] = "The customer has taken out a car pr reserved a car"
+      redirect_to '/indexcustomers'
+    else
     @user.destroy
     if role == 'Customer'
     redirect_to '/indexcustomers'
     elsif role == 'Admin'
     redirect_to '/indexadmin'
-      end
-  end
+    end
+    end
+    end
 
   private
   def user_params

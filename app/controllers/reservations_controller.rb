@@ -7,6 +7,9 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
+      @reservation.car.update_attribute(:carstatus, 'Reserved')
+      PickupfailureJob.set(wait_until: (@reservation.start_time + 30.minutes)).perform_later(@reservation)
+      ReturnfailureJob.set(wait_until: @reservation.end_time).perform_later(@reservation)
       if current_user.role == 'Customer'
       redirect_to '/cars'
       elsif current_user.role == 'Admin'
@@ -38,6 +41,9 @@ class ReservationsController < ApplicationController
   def checkout
     @reservation = Reservation.find(params[:id])
     @reservation.update_attribute(:status, true)
+    @reservation.update_attribute(:current, true)
+    @reservation.update_attribute(:start_time, DateTime.now)
+    @reservation.car.update_attribute(:carstatus, 'Checked out')
     if current_user.role == 'Customer'
       redirect_to '/customer'
     elsif current_user.role == 'Admin'
@@ -51,6 +57,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
     @reservation.update_attribute(:current, 0)
     @reservation.update_attribute(:end_time, DateTime.now)
+    @reservation.car.update_attribute(:carstatus, 'Available')
     if current_user.role == 'Customer'
     redirect_to '/customer'
     elsif current_user.role == 'Admin'
@@ -65,4 +72,7 @@ class ReservationsController < ApplicationController
     params.require(:reservation).permit(:user_id, :car_id, :start_time, :end_time, :current, :status)
   end
 
+
+
 end
+

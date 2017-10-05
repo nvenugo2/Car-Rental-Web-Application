@@ -12,9 +12,9 @@
     <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
     <p>License plate <%= f.text_field :license_plate %></p>
     <%= f.hidden_field :status, :value => 'Approved' %>
-        <%= f.submit "Create car" %>
+        <%= f.submit "Create car", :class => "btn btn-primary" %>
         <% else %>
         <%= f.hidden_field :status, :value => 'Unpproved' %>
-    <%= f.submit "Suggest car" %>
+    <%= f.submit "Suggest car", :class => "btn btn-primary" %>
         <% end %>
 <% end %>

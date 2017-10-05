@@ -1,28 +1,29 @@
 <h1>Listing all cars</h1>
 
 <%= search_form_for @search do |f| %>
-    <p>Manufacturer: <%= f.collection_select :manufacturer_cont, Car.select("Manufacturer"), :manufacturer, :manufacturer, {:include_blank => "Please select manufacturer"} %></p>
-    <p>Model: <%= f.collection_select :model_cont, Car.select("Model"), :model, :model, {:include_blank => "Please select model"} %></p>
-    <p>Style: <%= f.collection_select :style_cont, Car.select("Style"), :style, :style, {:include_blank => "Please select style"} %></p>
-    <p>Location: <%= f.collection_select :location_cont, Car.select("Location"), :location, :location, {:include_blank => "Please select location"} %></p>
-    <%= f.submit "Search", class: "btn btn-primary" %>
+    <p>Manufacturer: <%= f.collection_select :manufacturer_cont, Car.select("Manufacturer").where(["status = :status", {status: 'Approved'}]).uniq, :manufacturer, :manufacturer, {:include_blank => "Please select manufacturer"} %></p>
+    <p>Model: <%= f.collection_select :model_cont, Car.select("Model").where(["status = :status", {status: 'Approved'}]).uniq, :model, :model, {:include_blank => "Please select model"} %></p>
+    <p>Style: <%= f.collection_select :style_cont, Car.select("Style").where(["status = :status", {status: 'Approved'}]).uniq, :style, :style, {:include_blank => "Please select style"} %></p>
+    <p>Location: <%= f.collection_select :location_cont, Car.select("Location").where(["status = :status", {status: 'Approved'}]).uniq, :location, :location, {:include_blank => "Please select location"} %></p>
+    <p>Status: <%= f.collection_select :carstatus_cont, Car.select("Carstatus").where(["status = :status", {status: 'Approved'}]).uniq, :carstatus, :carstatus, {:include_blank => "Please select car status"} %></p>
+    <%= f.submit "Search", :class => "btn btn-primary" %>
 <% end %>
 
 <% @cars.each do |car| %>
-    <h4><%= car.car_name %>  <%= link_to "More details", car_path(car) %></h4>
+    <h4><%= car.car_name %>  <%= link_to "More details", car_path(car), :class => "btn btn-primary" %></h4>
 <% end %>
 
 <% if current_user.role == 'Customer' %>
-<%= link_to "Suggest a car?", new_car_path %>
-    <%= link_to "Back", '/customer' %>
+<%= link_to "Suggest a car?", new_car_path, :class => "btn btn-primary" %>
+    <%= link_to "Back", '/customer', :class => "btn btn-primary" %>
 <% end %>
 <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
-<%= link_to "Add a new car?", new_car_path %>
-<%= link_to "Cars for approval", '/carsforapproval' %>
+<%= link_to "Add a new car?", new_car_path, :class => "btn btn-primary" %>
+<%= link_to "Cars for approval", '/carsforapproval', :class => "btn btn-primary" %>
     <%  if current_user.role == 'Admin' %>
-        <%= link_to "Back", '/admin' %>
+        <%= link_to "Back", '/admin', :class => "btn btn-primary" %>
     <% end %>
     <%  if current_user.role == 'Super admin' %>
-        <%= link_to "Back", '/superadmin' %>
+        <%= link_to "Back", '/superadmin', :class => "btn btn-primary" %>
     <% end %>
 <% end %>

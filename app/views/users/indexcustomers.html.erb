@@ -7,22 +7,22 @@
 
   <% if !@users.nil? then @users.each do |user| %>
             <p><%= user.first_name %> <%= user.last_name %>
-            <%= link_to 'More details', user_path(user) %>
-            <%= link_to 'Edit customer', edit_user_path(user) %>
-            <%= link_to 'Delete customer', user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'More details', user_path(user), :class => "btn btn-primary" %>
+            <%= link_to 'Edit customer', edit_user_path(user), :class => "btn btn-primary" %>
+            <%= link_to 'Delete customer', user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
             <% if (current_user.role == 'Admin' || current_user.role == 'Super admin') %>
-                  <%= link_to "Make admin", controller: :users, action: :makeadmin, id: user, :method => :put  %></p>
+                  <%= link_to "Make admin", controller: :users, action: :makeadmin, id: user, :method => :put, :class => "btn btn-primary"  %></p>
                   <% end %>
             <%  if current_user.role == 'Super admin' %>
-            <%= link_to "Make superadmin", controller: :users, action: :makesuperadmin, id: user, :method => :put, :class 'btn btn-primary'  %></p>
+            <%= link_to "Make superadmin", controller: :users, action: :makesuperadmin, id: user, :method => :put, :class => "btn btn-primary"  %></p>
                   <% end %>
       <% end %>
 <% end %>
 <%  if current_user.role == 'Admin' %>
-    <%= link_to "Back", '/admin', :class 'btn btn-primary' %>
+    <%= link_to "Back", '/admin', :class => "btn btn-primary" %>
 <% end %>
 <%  if current_user.role == 'Super admin' %>
-    <%= link_to "Back", '/superadmin', :class 'btn btn-primary' %>
+    <%= link_to "Back", '/superadmin', :class => "btn btn-primary" %>
 <% end %>
 
 

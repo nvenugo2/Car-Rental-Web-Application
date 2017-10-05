@@ -16,6 +16,7 @@
 = require bootstrap
 = require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
 
 // //For heroku server order
 // = require bootstrap

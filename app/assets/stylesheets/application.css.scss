@@ -1,5 +1,4 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 @import "main";
 
 body{background:#000}
@@ -30,5 +29,7 @@ html {font-family: "Delicious";}
  *
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 

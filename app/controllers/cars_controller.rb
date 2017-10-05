@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
   def index
     @search = Car.ransack(params[:q])
-    @cars = @search.result.where(["status = :status", {status: 'Approved'}])
+    @cars = @search.result(distinct: true).where(["status = :status", {status: 'Approved'}])
 
   end
 
@@ -41,8 +41,12 @@ class CarsController < ApplicationController
 
   def destroy
     @car = Car.find(params[:id])
+    unless Reservation.where("(? = car_id) AND (? = current)", @car.id, true).count == 0
+      flash[:notice] = "The car has been reserved or checked out"
+      else
     @car.destroy
       redirect_to '/cars'
+      end
   end
 
   private

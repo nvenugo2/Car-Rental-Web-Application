@@ -5,15 +5,14 @@
 <p>Rate: <%= @car.hourly_rate %></p>
 <p>Pick up location: <%= @car.location %></p>
 <p>License plate: <%= @car.license_plate %></p>
-<%= link_to "Back to cars menu", cars_path %>
+<%= link_to "Back to cars menu", cars_path, :class => "btn btn-primary" %>
 <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
-<%= link_to "Delete this car?", car_path(@car), method: :delete, data: {confirm: "Are you sure?" } %>
+<%= link_to "Delete this car?", car_path(@car), method: :delete, data: {confirm: "Are you sure?" }, :class => "btn btn-primary" %>
     <% end %>
 <% if (current_user.role == 'Admin' || current_user.role == 'Super admin') && (@car.status == 'Unapproved') %>
-        <%= link_to 'Approve this car', edit_car_path(@car) %>
+        <%= link_to 'Approve this car', edit_car_path(@car), :class => "btn btn-primary" %>
         <% else %>
-<%= link_to "Book this car!", new_reservation_path(:car_id => @car) %>
+<%= link_to "Book this car!", new_reservation_path(:car_id => @car), :class => "btn btn-primary" %>
     <% end %>
 <% session[:car_id] = @car.id %>
 
-Car id is <%= session[:car_id] %>
