@@ -38279,3 +38279,24 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nathen@gmail.com"], ["LIMIT", 1]]
   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nathen"], ["last_name", "Kick"], ["email", "nathen@gmail.com"], ["password_digest", "$2a$10$dmsWQD8wkkB8FH77RX9Njewj9w0kZIGGS3pExV1z0/V/oNEiim8yO"], ["address", "Raleigh"], ["age", 32], ["license_number", "4135"], ["credit_card_number", "7533"], ["role", "Super admin"], ["created_at", "2017-10-05 12:33:28.317690"], ["updated_at", "2017-10-05 12:33:28.317690"]]
   [1m[35m (61.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
