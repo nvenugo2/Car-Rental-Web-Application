@@ -57,7 +57,7 @@ gem 'bootstrap-sass', '3.3.6'
 
 gem 'autoprefixer-rails', '~> 7.1'
 
-gem 'figaro'
+#gem 'figaro'
 
 # <<<<<<< HEAD
 # gem 'bootstrap-sass', '3.3.6'
