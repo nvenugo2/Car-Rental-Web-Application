@@ -1,3 +1,21 @@
 $color: black;
 
 body{background:#000}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "main";
+
+body{background:#000}
+
+@font-face {
+  font-family: 'Delicious';
+  font-weight: bold;
+  src: url('/assets/Delicious-Bold.otf');
+}
+
+html {font-family: "Delicious";}
+
+* {
+  font-family: "Delicious";
+ }

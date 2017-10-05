@@ -13,15 +13,9 @@
 // for local setup order 
 //= require jquery
 //= require jquery_ujs
-= require bootstrap
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 
-// //For heroku server order
-// = require bootstrap
-// = require jquery
-// = require jquery_ujs
-// = require turbolinks
-// //= require_tree .
 
