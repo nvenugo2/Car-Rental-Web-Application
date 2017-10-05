@@ -38127,3 +38127,155 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.css.scss to D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.scss. (called from load at C:/RailsInstaller/Ruby2.2.0/bin/rake:23)
 DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.css.scss to D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/assets/stylesheets/main.scss. (called from load at C:/RailsInstaller/Ruby2.2.0/bin/rake:23)
+Started GET "/currentreservations" for 127.0.0.1 at 2017-10-05 12:23:41 -0400
+  
+SyntaxError (D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/controllers/reservations_controller.rb:11: syntax error, unexpected <<, expecting keyword_end
+<<<<<<< HEAD
+  ^
+D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_login (13)/express_cars_login/app/controllers/reservations_controller.rb:14: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^):
+  
+app/controllers/reservations_controller.rb:11: syntax error, unexpected <<, expecting keyword_end
+app/controllers/reservations_controller.rb:14: syntax error, unexpected ===, expecting keyword_end
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1801.3ms)
+Started GET "/logout" for 127.0.0.1 at 2017-10-05 12:23:45 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-05 12:23:48 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 392ms (Views: 370.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "BMW"], ["model", "536"], ["style", "Sedan"], ["hourly_rate", 8.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "MXCX21"], ["status", "Approved"], ["created_at", "2017-10-05 12:32:05.157450"], ["updated_at", "2017-10-05 12:32:05.157450"], ["carstatus", "Avaiable"]]
+  [1m[35m (87.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "AUDI"], ["model", "Q3"], ["style", "Hatchback"], ["hourly_rate", 5.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NXCX21"], ["status", "Approved"], ["created_at", "2017-10-05 12:32:05.249314"], ["updated_at", "2017-10-05 12:32:05.249314"], ["carstatus", "Available"]]
+  [1m[35m (138.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Jaguar"], ["model", "elite"], ["style", "Sedan"], ["hourly_rate", 9.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "RGB21"], ["status", "Approved"], ["created_at", "2017-10-05 12:32:05.390351"], ["updated_at", "2017-10-05 12:32:05.390351"], ["carstatus", "Available"]]
+  [1m[35m (78.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (23.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Benz"], ["model", "5 series"], ["style", "Sedan"], ["hourly_rate", 10.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NIRM21"], ["status", "Approved"], ["created_at", "2017-10-05 12:32:05.471996"], ["updated_at", "2017-10-05 12:32:05.471996"], ["carstatus", "Available"]]
+  [1m[35m (112.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stacey@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "BMW"], ["model", "536"], ["style", "Sedan"], ["hourly_rate", 8.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "MXCX21"], ["status", "Approved"], ["created_at", "2017-10-05 12:33:27.953709"], ["updated_at", "2017-10-05 12:33:27.953709"], ["carstatus", "Avaiable"]]
+  [1m[35m (82.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "AUDI"], ["model", "Q3"], ["style", "Hatchback"], ["hourly_rate", 5.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NXCX21"], ["status", "Approved"], ["created_at", "2017-10-05 12:33:28.038969"], ["updated_at", "2017-10-05 12:33:28.038969"], ["carstatus", "Available"]]
+  [1m[35m (75.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Jaguar"], ["model", "elite"], ["style", "Sedan"], ["hourly_rate", 9.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "RGB21"], ["status", "Approved"], ["created_at", "2017-10-05 12:33:28.116760"], ["updated_at", "2017-10-05 12:33:28.116760"], ["carstatus", "Available"]]
+  [1m[35m (52.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at", "carstatus") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Benz"], ["model", "5 series"], ["style", "Sedan"], ["hourly_rate", 10.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NIRM21"], ["status", "Approved"], ["created_at", "2017-10-05 12:33:28.171698"], ["updated_at", "2017-10-05 12:33:28.171698"], ["carstatus", "Available"]]
+  [1m[35m (63.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stacey@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Stacey"], ["last_name", "Nathen"], ["email", "stacey@gmail.com"], ["password_digest", "$2a$10$DdaplQ8VlsnDp.5euO9k4.FbuwkWVOc5HcIKzk7wqIr8SJrnWij7e"], ["address", "Raleigh"], ["age", 23], ["license_number", "4125"], ["credit_card_number", "7532"], ["role", "Admin"], ["created_at", "2017-10-05 12:33:28.256527"], ["updated_at", "2017-10-05 12:33:28.256527"]]
+  [1m[35m (58.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nathen@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nathen"], ["last_name", "Kick"], ["email", "nathen@gmail.com"], ["password_digest", "$2a$10$dmsWQD8wkkB8FH77RX9Njewj9w0kZIGGS3pExV1z0/V/oNEiim8yO"], ["address", "Raleigh"], ["age", 32], ["license_number", "4135"], ["credit_card_number", "7533"], ["role", "Super admin"], ["created_at", "2017-10-05 12:33:28.317690"], ["updated_at", "2017-10-05 12:33:28.317690"]]
+  [1m[35m (61.6ms)[0m  [1m[36mcommit transaction[0m
