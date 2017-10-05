@@ -61,8 +61,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'autoprefixer-rails', '~> 7.1'
 
-gem 'frontend-generators'
-
 gem 'figaro'
 
 gem 'bootstrap-sass', '3.3.6'
