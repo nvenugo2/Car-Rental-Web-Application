@@ -8,7 +8,7 @@ class CreateCars < ActiveRecord::Migration[5.0]
       t.text :location, null: false
       t.string :license_plate
       t.string :status
-
+      t.string :carstatus, :default => 'Available'
       t.timestamps
     end
   end

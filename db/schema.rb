@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171004213252) do
+ActiveRecord::Schema.define(version: 20171006184234) do
 
   create_table "cars", force: :cascade do |t|
-    t.string   "manufacturer",  null: false
-    t.string   "model",         null: false
-    t.string   "style",         null: false
-    t.float    "hourly_rate",   null: false
-    t.text     "location",      null: false
+    t.string   "manufacturer",                        null: false
+    t.string   "model",                               null: false
+    t.string   "style",                               null: false
+    t.float    "hourly_rate",                         null: false
+    t.text     "location",                            null: false
     t.string   "license_plate"
     t.string   "status"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.string   "carstatus"
+    t.string   "carstatus",     default: "Available"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   create_table "reservations", force: :cascade do |t|

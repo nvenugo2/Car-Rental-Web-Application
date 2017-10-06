@@ -49373,3 +49373,160 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 288ms (Views: 252.6ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCars (20171006184234)
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "manufacturer" varchar NOT NULL, "model" varchar NOT NULL, "style" varchar NOT NULL, "hourly_rate" float NOT NULL, "location" text NOT NULL, "license_plate" varchar, "status" varchar, "carstatus" varchar DEFAULT 'Available', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCars (20171006184234)
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "manufacturer" varchar NOT NULL, "model" varchar NOT NULL, "style" varchar NOT NULL, "hourly_rate" float NOT NULL, "location" text NOT NULL, "license_plate" varchar, "status" varchar, "carstatus" varchar DEFAULT 'Available', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCars (20171006184234)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "manufacturer" varchar NOT NULL, "model" varchar NOT NULL, "style" varchar NOT NULL, "hourly_rate" float NOT NULL, "location" text NOT NULL, "license_plate" varchar, "status" varchar, "carstatus" varchar DEFAULT 'Available', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCars (20171006184234)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "manufacturer" varchar NOT NULL, "model" varchar NOT NULL, "style" varchar NOT NULL, "hourly_rate" float NOT NULL, "location" text NOT NULL, "license_plate" varchar, "status" varchar, "carstatus" varchar DEFAULT 'Available', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171006184234"]]
+  [1m[35m (83.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_car_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_reservations_on_user_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "BMW"], ["model", "536"], ["style", "Sedan"], ["hourly_rate", 8.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "MXCX21"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.076657"], ["updated_at", "2017-10-06 16:05:49.076657"]]
+  [1m[35m (89.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "AUDI"], ["model", "Q3"], ["style", "Hatchback"], ["hourly_rate", 5.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NXCX21"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.168335"], ["updated_at", "2017-10-06 16:05:49.168335"]]
+  [1m[35m (64.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Jaguar"], ["model", "XF"], ["style", "Sedan"], ["hourly_rate", 9.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "RGB21"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.235927"], ["updated_at", "2017-10-06 16:05:49.235927"]]
+  [1m[35m (64.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Benz"], ["model", "E Class"], ["style", "Sedan"], ["hourly_rate", 10.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NIRM21"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.303011"], ["updated_at", "2017-10-06 16:05:49.303011"]]
+  [1m[35m (85.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stacey@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Stacey"], ["last_name", "Nathen"], ["email", "stacey@gmail.com"], ["password_digest", "$2a$10$DdaplQ8VlsnDp.5euO9k4.FbuwkWVOc5HcIKzk7wqIr8SJrnWij7e"], ["address", "Raleigh"], ["age", 23], ["license_number", "4125"], ["credit_card_number", "7532"], ["role", "Admin"], ["created_at", "2017-10-06 16:05:49.445876"], ["updated_at", "2017-10-06 16:05:49.445876"]]
+  [1m[35m (136.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nathen@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nathen"], ["last_name", "Kick"], ["email", "nathen@gmail.com"], ["password_digest", "$2a$10$dmsWQD8wkkB8FH77RX9Njewj9w0kZIGGS3pExV1z0/V/oNEiim8yO"], ["address", "Raleigh"], ["age", 32], ["license_number", "4135"], ["credit_card_number", "7533"], ["role", "Super admin"], ["created_at", "2017-10-06 16:05:49.586144"], ["updated_at", "2017-10-06 16:05:49.586144"]]
+  [1m[35m (102.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "laurie@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Laurie"], ["last_name", "Samson"], ["email", "laurie@gmail.com"], ["password_digest", "$2a$10$DdaplQ8VlsnDp.5euO9k4.FbuwkWVOc5HcIKzk7wqIr8SJrnWij7e"], ["address", "Raleigh"], ["age", 23], ["license_number", "4125"], ["credit_card_number", "7532"], ["role", "Admin"], ["created_at", "2017-10-06 16:05:49.692706"], ["updated_at", "2017-10-06 16:05:49.692706"]]
+  [1m[35m (85.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "james@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "address", "age", "license_number", "credit_card_number", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "James"], ["last_name", "Taylor"], ["email", "james@gmail.com"], ["password_digest", "$2a$10$dmsWQD8wkkB8FH77RX9Njewj9w0kZIGGS3pExV1z0/V/oNEiim8yO"], ["address", "Raleigh"], ["age", 32], ["license_number", "4135"], ["credit_card_number", "7533"], ["role", "Super admin"], ["created_at", "2017-10-06 16:05:49.781910"], ["updated_at", "2017-10-06 16:05:49.781910"]]
+  [1m[35m (84.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Honda"], ["model", "Accord"], ["style", "Sedan"], ["hourly_rate", 8.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "MXCX22"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.868876"], ["updated_at", "2017-10-06 16:05:49.868876"]]
+  [1m[35m (85.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "AUDI"], ["model", "A6"], ["style", "Sedan"], ["hourly_rate", 5.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NXCX28"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:49.958320"], ["updated_at", "2017-10-06 16:05:49.958320"]]
+  [1m[35m (74.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Jaguar"], ["model", "F Pace"], ["style", "SUV"], ["hourly_rate", 9.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "RGB15"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:50.036212"], ["updated_at", "2017-10-06 16:05:50.036212"]]
+  [1m[35m (75.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("manufacturer", "model", "style", "hourly_rate", "location", "license_plate", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["manufacturer", "Benz"], ["model", "C Class"], ["style", "Sedan"], ["hourly_rate", 10.5], ["location", "2345 Wake forest, Raleigh, NC 23456"], ["license_plate", "NIRM91"], ["status", "Approved"], ["created_at", "2017-10-06 16:05:50.113780"], ["updated_at", "2017-10-06 16:05:50.113780"]]
+  [1m[35m (73.5ms)[0m  [1m[36mcommit transaction[0m
