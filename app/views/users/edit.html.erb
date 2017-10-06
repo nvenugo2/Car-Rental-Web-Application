@@ -18,8 +18,7 @@
       <%= f.label :last_name %><br>
       <%= f.text_field :last_name %>
     </p>
-
-    <% unless ((current_user.email == 'nathen@gmail.com' && @user.email == 'nathen@gmail.com' || (current_user.email == 'stacey@gmail.com' && @user.email == 'stacey@gmail.com)) %>
+<% unless ((current_user.email == 'nathen@gmail.com' && @user.email == 'nathen@gmail.com') || (current_user.email == 'stacey@gmail.com' && @user.email == 'stacey@gmail.com')) %>
     <p>
       <%= f.label :email %><br>
       <%= f.text_field :email %>
@@ -27,7 +26,7 @@
     <% end %>
 
     <% if current_user.id == @user.id %>
-        <% unless (current_user.email == 'nathen@gmail.com' || current_user.email == 'stacey@gmail.com' ) %>
+        <% unless ((current_user.email == 'nathen@gmail.com') || (current_user.email == 'stacey@gmail.com')) %>
         <p>
     <%= f.label :password %><br>
     <%= f.password_field :password %>
