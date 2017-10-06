@@ -8,6 +8,7 @@
     <th>Booked by</th>
     <th>Start time</th>
     <th>End time</th>
+    <th>Utilization</th>
   </tr>
 
   <% @reservations.each do |reservation| %>
@@ -17,7 +18,12 @@
         <td><%= reservation.user.name %></td>
         <td><%= reservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
         <td><%= reservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+        <% if (reservation.status == true && reservation.current == false) %>
+            <td>Used and checked in</td>
+            <% elsif (reservation.status == false && reservation.current == false) %>
+            <td>Cancelled</td>
 
+            <% end %>
       </tr>
   <% end %>
 </table>

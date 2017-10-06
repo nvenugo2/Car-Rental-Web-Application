@@ -3,15 +3,22 @@
 Primary Information
 The URL of our website is https://expresscarrental.herokuapp.com.
 
+The passwords and email ids of the below admin and super admin have been disabled for editing as it may affect other reviewers 
 Superadmin:  stacey@gmail.com
 Password: root
 
-Superadmin:  jack@gmail.com
+Superadmin:  nathen@gmail.com
+Password: root
+
+To check the edit functionalities, you could use the below admin and super admin email id and password
+Superadmin:  laurie@gmail.com
+Password: root
+
+Superadmin:  james@gmail.com
 Password: root
 
 At the top of homepage, you can sign in with your account. And if you are a new user, click "Signup" button on the right.
-To create an account, you need to input your first name, last name, email, password, address, age license number, credit 
-card number. An error will be raised if your email address has already been taken. An error will be raised if your password
+To create an account, you need to input your first name, last name, email, password. An error will be raised if your email address has already been taken. An error will be raised if your password
  length is not matching 8 characters.
 After created your account successfully, you can login. From the homepage you can see the list of all cars 
 and reservation information. 
@@ -34,6 +41,19 @@ User can view the list of all reservations done and the current reservation by p
 display all the information for that user. In the homepage user can press “Current Reservation” and “Reservations” to view all details.
 Return a checked-out car: After you rent a car, the user information on the homepage will be changed, showing the attributes 
 of the car, you rented. In the reservation page User can return the car with "Return Now!". And you can rent another car after returning the car.
+
+User functions:
+Navigations help - Available tabs
+1) List cars - Here, the cars can be searched by model, manufacturer, style, availability, location
+    a) Suggest car - The user can suggest a car for approval from admin or super admin
+    b) Book car - The user can book a car by specifying start time and end time. Errors will be thrown if end time is before start time, start time is prior to current time.Booking time is less than 30mins or greater than 10hrs.
+2)Reservation history - The user can view his past reservations
+3)Current reservations - The user can view his current reservations
+    a) Check out a car - the user can check out a car
+    b)Check in a car - the user can check in a car
+    c) Cancel a reservation - the user can cancel a reservation
+4)Edit profile - the user can change name, email id, password, 
+
 
 
 

@@ -5,3 +5,4 @@
 <% @cars.each do |car| %>
     <h4><%= car.manufacturer %> <%= car.model %>  <%= link_to "More details", car_path(car) %></h4>
 <% end %>
+<%= link_to "Back to cars menu", cars_path, :class => "btn btn-primary" %>

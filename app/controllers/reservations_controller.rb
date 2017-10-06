@@ -53,6 +53,19 @@ class ReservationsController < ApplicationController
     end
   end
 
+  def cancel
+    @reservation = Reservation.find(params[:id])
+    @reservation.update_attribute(:current, false)
+    @reservation.car.update_attribute(:carstatus, 'Available')
+    if current_user.role == 'Customer'
+      redirect_to '/customer'
+    elsif current_user.role == 'Admin'
+      redirect_to '/admin'
+    else
+      redirect_to '/superadmin'
+    end
+  end
+
   def checkin
     @reservation = Reservation.find(params[:id])
     @reservation.update_attribute(:current, 0)

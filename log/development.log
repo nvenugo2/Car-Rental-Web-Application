@@ -48076,3 +48076,16 @@ DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use 
 Completed 200 OK in 336ms (Views: 221.2ms | ActiveRecord: 25.8ms)
 
 
+Started GET "/logout" for 127.0.0.1 at 2017-10-06 02:54:01 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-06 02:54:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 261ms (Views: 232.3ms | ActiveRecord: 0.0ms)
+
+
