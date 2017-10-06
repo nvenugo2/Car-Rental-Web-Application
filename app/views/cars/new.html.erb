@@ -8,7 +8,7 @@
     <p>Model: <%= f.text_field :model %></p>
     <p>Style: <%= f.text_field :style %></p>
     <p>Hourly rate: <%= f.text_field :hourly_rate %></p>
-    <p>Location: <%= f.text_area :location %></p>
+    <p>Location: <%= f.text_field :location %></p>
     <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
     <p>License plate <%= f.text_field :license_plate %></p>
     <%= f.hidden_field :status, :value => 'Approved' %>
