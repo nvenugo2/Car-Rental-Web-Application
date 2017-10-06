@@ -49,9 +49,9 @@ form {
 
 input {
     width: 100%;
-    color: black;
-    background-color: lightgrey;
-    border: 1px;
+    color: white;
+    background-color: grey;
+    border: 1px white;
     padding: 2px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -59,5 +59,11 @@ input {
 
 option { 
 	color: black;
-    background-color: lightblue;
+    background-color: grey;
+}
+
+select{
+    background: rgba(0,0,0,0.3);
+    color:#FFFF;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
 }
