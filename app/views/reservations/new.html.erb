@@ -1,4 +1,4 @@
-<h3>New reservation</h3>
+<h3 align = "center">New reservation</h3>
 <% if flash[:alert] %>
 <p id ="notice"><%= flash[:alert] %>
     </p>
@@ -26,7 +26,7 @@
 <% end %>
     <%= link_to "Back", '/cars', :class => "btn btn-primary" %>
 <% else %>
-    <h5>For customer</h5>
+    <h5 align = "center">For customer</h5>
 
     <%= form_for @reservation do |f| %>
         <p><h3>Select car</h3>
