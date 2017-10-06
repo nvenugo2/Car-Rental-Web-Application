@@ -50,8 +50,14 @@ form {
 input {
     width: 100%;
     color: black;
+    background-color: lightgrey;
     border: 1px;
     padding: 2px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+option { 
+	color: black;
+    background-color: lightblue;
 }
