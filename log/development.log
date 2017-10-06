@@ -48089,3 +48089,1287 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 261ms (Views: 232.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2017-10-06 10:42:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 11714ms (Views: 11665.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/sessions" for 127.0.0.1 at 2017-10-06 10:42:54 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+9VVsUWDijBGjhreeUBAAYFxV7xN0V8kApscoQWolmPtifIyeqsFxO+R68PxjIVbZVZZBINiLT8vPE5nze7Nw==", "email"=>"stacey@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stacey@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 153ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-10-06 10:42:54 -0400
+Processing by UsersController#admin as HTML
+  Rendering users/admin.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/admin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 247ms (Views: 221.9ms | ActiveRecord: 1.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:43:12 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 245ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/viewreservations?class=btn+btn-primary&method=get&user_id=21" for 127.0.0.1 at 2017-10-06 10:43:17 -0400
+Processing by ReservationsController#viewreservations as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"get", "user_id"=>"21"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering reservations/viewreservations.html.erb within layouts/application
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (user_id = 21)[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered reservations/viewreservations.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 318ms (Views: 222.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-10-06 10:43:20 -0400
+Processing by UsersController#admin as HTML
+  Rendering users/admin.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/admin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 220ms (Views: 196.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:43:23 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 232ms (Views: 204.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-10-06 10:43:24 -0400
+Processing by UsersController#admin as HTML
+  Rendering users/admin.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered users/admin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 259ms (Views: 229.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-10-06 10:43:28 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-06 10:43:28 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 212ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-10-06 10:43:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQ9l8XMAoc7IKBEXl2yHFjzgU0m2XjdXy0G8dhUmx8HpVhdvf/wD8RqMbtPhT7QDV3DPc1Vk+p+n9yE9Dgferw==", "email"=>"mraveen@ncsu.edu", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mraveen@ncsu.edu"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 266ms (Views: 193.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/signup" for 127.0.0.1 at 2017-10-06 10:44:04 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (298.0ms)
+Completed 200 OK in 506ms (Views: 475.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-10-06 10:44:25 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pOlIJ+nAi26vKc6qscxGac8/8By0gGdmWUkLMzOvhmtssDq55TwpUX2NsW7H73V8pK9sJle6qq41/5Z4KI6fBQ==", "user"=>{"first_name"=>"Navin", "last_name"=>"Venugopal", "email"=>"n@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Customer"}, "commit"=>"Create account"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (13.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Navin"], ["last_name", "Venugopal"], ["email", "n@gmail.com"], ["password_digest", "$2a$10$0/ZlSFTtFuPH9/TIdac/duqx6wCYLPZifYTU9HmE396RGen7.FRcu"], ["created_at", "2017-10-06 10:44:25.617567"], ["updated_at", "2017-10-06 10:44:25.617567"]]
+  [1m[35m (82.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 303ms (ActiveRecord: 96.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-06 10:44:25 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 209ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/sessions" for 127.0.0.1 at 2017-10-06 10:44:45 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jqlezfj5sITrl70/XAIucWrvooGiTvGtUXxkn5IiSuLu8CxT9AUSuzkzwvsqIR1kAX8+u0F0PGU9yvnUiQNTjA==", "email"=>"n@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "n@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/customer
+Completed 302 Found in 76ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:44:45 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 221ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cars" for 127.0.0.1 at 2017-10-06 10:44:53 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_101531280 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:9)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Manufacturer FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_101531280 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:10)
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT DISTINCT Model FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_101531280 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:11)
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT DISTINCT Style FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_101531280 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:12)
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT DISTINCT Location FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_101531280 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:13)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Carstatus FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT "cars".* FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/index.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 365ms (Views: 317.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/cars/34" for 127.0.0.1 at 2017-10-06 10:44:57 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 239ms (Views: 204.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservation/new?car_id=34" for 127.0.0.1 at 2017-10-06 10:44:59 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"car_id"=>"34"}
+  Rendering reservations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 269ms (Views: 231.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2017-10-06 10:45:08 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rA00E2tTevC9lhqAxt9Hk96zDnd/esyg6ENMRogeYMVkVEaNZ6/Yz28yZUSw/HSGtSOSTZxAAWiE9dENkz95qw==", "reservation"=>{"start_time(1i)"=>"2017", "start_time(2i)"=>"10", "start_time(3i)"=>"6", "start_time(4i)"=>"12", "start_time(5i)"=>"00", "end_time(1i)"=>"2017", "end_time(2i)"=>"10", "end_time(3i)"=>"6", "end_time(4i)"=>"13", "end_time(5i)"=>"00", "user_id"=>"22", "car_id"=>"34"}, "commit"=>"Book!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations" WHERE ((22 = user_id) AND ('t' = current))[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations" WHERE ((34 = car_id) AND (start_time BETWEEN '2017-10-06 12:00:00' AND '2017-10-06 13:00:00' )AND (end_time BETWEEN '2017-10-06 12:00:00' AND '2017-10-06 13:00:00') AND ('t' = current))[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "reservations" ("start_time", "end_time", "user_id", "car_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["start_time", "2017-10-06 12:00:00"], ["end_time", "2017-10-06 13:00:00"], ["user_id", 22], ["car_id", 34], ["created_at", "2017-10-06 10:45:08.942355"], ["updated_at", "2017-10-06 10:45:08.942355"]]
+  [1m[35m (82.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (25.1ms)[0m  [1m[33mUPDATE "cars" SET "carstatus" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["carstatus", "Reserved"], ["updated_at", "2017-10-06 10:45:09.028046"], ["id", 34]]
+  [1m[35m (83.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued PickupfailureJob (Job ID: 3cbb67a6-8125-49d4-a962-39af306dfca8) to Async(urgent) at 2017-10-06 16:30:00 UTC with arguments: #<GlobalID:0xa54f500 @uri=#<URI::GID gid://express-cars/Reservation/10>>
+[ActiveJob] Enqueued ReturnfailureJob (Job ID: 5cd35808-b2e5-4516-ad6a-adaf4c91c17f) to Async(urgent) at 2017-10-06 17:00:00 UTC with arguments: #<GlobalID:0xa54f500 @uri=#<URI::GID gid://express-cars/Reservation/10>>
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 1146ms (ActiveRecord: 190.9ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-10-06 10:45:09 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_96066264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:9)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Manufacturer FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_96066264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:10)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Model FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_96066264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:11)
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT DISTINCT Style FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_96066264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:12)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Location FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_96066264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:13)
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT DISTINCT Carstatus FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT DISTINCT "cars".* FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 229ms (Views: 201.2ms | ActiveRecord: 1.5ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:45:16 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 2143ms (Views: 1543.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customercurrentreservation" for 127.0.0.1 at 2017-10-06 10:45:20 -0400
+Processing by ReservationsController#customercurrentreservation as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customercurrentreservation.html.erb within layouts/application
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (current = 't' and user_id = 22)[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customercurrentreservation.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 241ms (Views: 212.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/10/checkout?class=btn+btn-primary&method=put" for 127.0.0.1 at 2017-10-06 10:45:27 -0400
+Processing by ReservationsController#checkout as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"put", "id"=>"10"}
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "reservations" SET "status" = ?, "updated_at" = ? WHERE "reservations"."id" = ?[0m  [["status", "t"], ["updated_at", "2017-10-06 10:45:27.659359"], ["id", 10]]
+  [1m[35m (90.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "start_time" = ?, "updated_at" = ? WHERE "reservations"."id" = ?[0m  [["start_time", "2017-10-06 10:45:27.752776"], ["updated_at", "2017-10-06 10:45:27.774884"], ["id", 10]]
+  [1m[35m (89.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "cars" SET "carstatus" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["carstatus", "Checked out"], ["updated_at", "2017-10-06 10:45:27.868580"], ["id", 34]]
+  [1m[35m (82.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/customer
+Completed 302 Found in 305ms (ActiveRecord: 264.9ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:45:27 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 196ms (Views: 172.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customercurrentreservation" for 127.0.0.1 at 2017-10-06 10:45:31 -0400
+Processing by ReservationsController#customercurrentreservation as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customercurrentreservation.html.erb within layouts/application
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (current = 't' and user_id = 22)[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customercurrentreservation.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 269ms (Views: 233.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/reservations/10/checkin?class=btn+btn-primary&method=put" for 127.0.0.1 at 2017-10-06 10:45:34 -0400
+Processing by ReservationsController#checkin as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"put", "id"=>"10"}
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "current" = ?, "updated_at" = ? WHERE "reservations"."id" = ?[0m  [["current", "f"], ["updated_at", "2017-10-06 10:45:34.879254"], ["id", 10]]
+  [1m[35m (101.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "end_time" = ?, "updated_at" = ? WHERE "reservations"."id" = ?[0m  [["end_time", "2017-10-06 10:45:34.985115"], ["updated_at", "2017-10-06 10:45:34.986116"], ["id", 10]]
+  [1m[35m (78.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "cars" SET "carstatus" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["carstatus", "Available"], ["updated_at", "2017-10-06 10:45:35.068696"], ["id", 34]]
+  [1m[35m (80.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/customer
+Completed 302 Found in 276ms (ActiveRecord: 263.9ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:45:35 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 215ms (Views: 191.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customerhistory" for 127.0.0.1 at 2017-10-06 10:45:37 -0400
+Processing by ReservationsController#customerhistory as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customerhistory.html.erb within layouts/application
+  [1m[36mReservation Load (1.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (user_id = 22 and current = 'f')[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customerhistory.html.erb within layouts/application (144.9ms)
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `reservation' for #<#<Class:0xbc188e0>:0xb9afae0>):
+    17:             <td><%= custreservation.user.name %></td>
+    18:             <td><%= custreservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+    19:             <td><%= custreservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+    20:             <% if custreservation.status == true && reservation.current == false %>
+    21:                 <td>Used and returned</td>
+    22:             <% elsif custreservation.status == false && reservation.current == false %>
+    23:                 <td>Cancelled</td>
+  
+app/views/reservations/customerhistory.html.erb:20:in `block in _app_views_reservations_customerhistory_html_erb___197449789_97378464'
+app/views/reservations/customerhistory.html.erb:13:in `_app_views_reservations_customerhistory_html_erb___197449789_97378464'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (2157.1ms)
+Started GET "/customerhistory" for 127.0.0.1 at 2017-10-06 10:47:49 -0400
+Processing by ReservationsController#customerhistory as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customerhistory.html.erb within layouts/application
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (user_id = 22 and current = 'f')[0m
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customerhistory.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 217ms (Views: 189.9ms | ActiveRecord: 2.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:48:02 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 240ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-10-06 10:48:05 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_104013108 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:9)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Manufacturer FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_104013108 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:10)
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT DISTINCT Model FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_104013108 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:11)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Style FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_104013108 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:12)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Location FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_104013108 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:13)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Carstatus FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT "cars".* FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 263ms (Views: 235.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cars/34" for 127.0.0.1 at 2017-10-06 10:48:06 -0400
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 242ms (Views: 214.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservation/new?car_id=34" for 127.0.0.1 at 2017-10-06 10:48:09 -0400
+Processing by ReservationsController#new as HTML
+  Parameters: {"car_id"=>"34"}
+  Rendering reservations/new.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 255ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2017-10-06 10:48:18 -0400
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dO0j4nV8e3+ug5LMMONT+3XZT1buuVUH0GTW5zgkcYG8tFF8eYDZQHwn7QhGwGDuHknTbA2DmM+80kusIwVo7w==", "reservation"=>{"start_time(1i)"=>"2017", "start_time(2i)"=>"10", "start_time(3i)"=>"6", "start_time(4i)"=>"14", "start_time(5i)"=>"00", "end_time(1i)"=>"2017", "end_time(2i)"=>"10", "end_time(3i)"=>"6", "end_time(4i)"=>"15", "end_time(5i)"=>"00", "user_id"=>"22", "car_id"=>"34"}, "commit"=>"Book!"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations" WHERE ((22 = user_id) AND ('t' = current))[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations" WHERE ((34 = car_id) AND (start_time BETWEEN '2017-10-06 14:00:00' AND '2017-10-06 15:00:00' )AND (end_time BETWEEN '2017-10-06 14:00:00' AND '2017-10-06 15:00:00') AND ('t' = current))[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "reservations" ("start_time", "end_time", "user_id", "car_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["start_time", "2017-10-06 14:00:00"], ["end_time", "2017-10-06 15:00:00"], ["user_id", 22], ["car_id", 34], ["created_at", "2017-10-06 10:48:18.406340"], ["updated_at", "2017-10-06 10:48:18.406340"]]
+  [1m[35m (89.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "cars" SET "carstatus" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["carstatus", "Reserved"], ["updated_at", "2017-10-06 10:48:18.498597"], ["id", 34]]
+  [1m[35m (82.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued PickupfailureJob (Job ID: da8cf4f2-f073-41b1-a085-1b7c01f4767d) to Async(urgent) at 2017-10-06 18:30:00 UTC with arguments: #<GlobalID:0xb837af0 @uri=#<URI::GID gid://express-cars/Reservation/11>>
+[ActiveJob] Enqueued ReturnfailureJob (Job ID: 7b4f1545-94a7-4765-ba02-13359c29fd7d) to Async(urgent) at 2017-10-06 19:00:00 UTC with arguments: #<GlobalID:0xb837af0 @uri=#<URI::GID gid://express-cars/Reservation/11>>
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 186ms (ActiveRecord: 174.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-10-06 10:48:18 -0400
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_82023264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:9)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Manufacturer FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_82023264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:10)
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT DISTINCT Model FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_82023264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:11)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Style FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_82023264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:12)
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT DISTINCT Location FROM "cars" WHERE (status = 'Approved')[0m
+DEPRECATION WARNING: uniq is deprecated and will be removed from Rails 5.1 (use distinct instead) (called from block in _app_views_cars_index_html_erb___402925707_82023264 at D:/01_Notes/Fall_2017/OODD - 517/Assignment/Program2_Rails/express_cars_final/express_cars_login/app/views/cars/index.html.erb:13)
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT Carstatus FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT DISTINCT "cars".* FROM "cars" WHERE (status = 'Approved')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered cars/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 222ms (Views: 190.0ms | ActiveRecord: 2.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:48:24 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2266ms (Views: 2238.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customercurrentreservation" for 127.0.0.1 at 2017-10-06 10:48:29 -0400
+Processing by ReservationsController#customercurrentreservation as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customercurrentreservation.html.erb within layouts/application
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (current = 't' and user_id = 22)[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customercurrentreservation.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 233ms (Views: 203.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations/11/cancel?class=btn+btn-primary&method=put" for 127.0.0.1 at 2017-10-06 10:48:33 -0400
+Processing by ReservationsController#cancel as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"put", "id"=>"11"}
+  [1m[36mReservation Load (0.5ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "current" = ?, "updated_at" = ? WHERE "reservations"."id" = ?[0m  [["current", "f"], ["updated_at", "2017-10-06 10:48:34.028498"], ["id", 11]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "cars" SET "carstatus" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["carstatus", "Available"], ["updated_at", "2017-10-06 10:48:34.119743"], ["id", 34]]
+  [1m[35m (73.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://localhost:3000/customer
+Completed 302 Found in 171ms (ActiveRecord: 162.9ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:48:34 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 213ms (Views: 192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customercurrentreservation" for 127.0.0.1 at 2017-10-06 10:48:37 -0400
+Processing by ReservationsController#customercurrentreservation as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customercurrentreservation.html.erb within layouts/application
+  [1m[36mReservation Load (1.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (current = 't' and user_id = 22)[0m
+  Rendered reservations/customercurrentreservation.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 253ms (Views: 226.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:48:39 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 242ms (Views: 206.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/customerhistory" for 127.0.0.1 at 2017-10-06 10:48:41 -0400
+Processing by ReservationsController#customerhistory as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering reservations/customerhistory.html.erb within layouts/application
+  [1m[36mReservation Load (0.0ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE (user_id = 22 and current = 'f')[0m
+  [1m[36mCar Load (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered reservations/customerhistory.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 247ms (Views: 217.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:48:47 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 240ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customer" for 127.0.0.1 at 2017-10-06 10:49:27 -0400
+Processing by UsersController#customer as HTML
+  Rendering users/customer.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendered users/customer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 231ms (Views: 197.9ms | ActiveRecord: 1.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/logout" for 127.0.0.1 at 2017-10-06 10:50:35 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-06 10:50:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 219ms (Views: 190.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2017-10-06 10:50:48 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DV68IufQ6nUKLZWTMjWEylWSmFgdb7Ze+E+1CU627abFB8686yxIStiJ6ldEFrffPgIEYv5Ve5aU+ShCVZf0yA==", "email"=>"nathen@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nathen@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/superadmin
+Completed 302 Found in 73ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:50:48 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 230ms (Views: 205.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/indexadmin" for 127.0.0.1 at 2017-10-06 10:50:53 -0400
+Processing by UsersController#indexadmin as HTML
+  Rendering users/indexadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexadmin.html.erb within layouts/application (559.6ms)
+Completed 200 OK in 2808ms (Views: 2192.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/20/makesuperadmin?class=btn+btn-primary&method=put" for 127.0.0.1 at 2017-10-06 10:51:03 -0400
+Processing by UsersController#makesuperadmin as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"put", "id"=>"20"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (18.1ms)[0m  [1m[33mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", "Super admin"], ["updated_at", "2017-10-06 10:51:04.011658"], ["id", 20]]
+  [1m[35m (78.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/indexcustomers
+Completed 302 Found in 100ms (ActiveRecord: 96.8ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:51:04 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 214ms (Views: 184.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:51:19 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 227ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:51:21 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 226ms (Views: 189.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:51:23 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 254ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexadmin" for 127.0.0.1 at 2017-10-06 10:51:25 -0400
+Processing by UsersController#indexadmin as HTML
+  Rendering users/indexadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexadmin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 212ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:51:29 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 230ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexsuperadmin" for 127.0.0.1 at 2017-10-06 10:51:34 -0400
+Processing by UsersController#indexsuperadmin as HTML
+  Rendering users/indexsuperadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Super admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexsuperadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 217ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/20" for 127.0.0.1 at 2017-10-06 10:51:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 227ms (Views: 204.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexadmin" for 127.0.0.1 at 2017-10-06 10:51:38 -0400
+Processing by UsersController#indexadmin as HTML
+  Rendering users/indexadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Admin')[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexadmin.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 252ms (Views: 214.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:51:41 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 271ms (Views: 229.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:51:46 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 244ms (Views: 214.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/22" for 127.0.0.1 at 2017-10-06 10:51:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 252ms (Views: 221.9ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:51:49 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 228ms (Views: 193.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:51:51 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 235ms (Views: 204.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexsuperadmin" for 127.0.0.1 at 2017-10-06 10:51:55 -0400
+Processing by UsersController#indexsuperadmin as HTML
+  Rendering users/indexsuperadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Super admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexsuperadmin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 243ms (Views: 217.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/20" for 127.0.0.1 at 2017-10-06 10:51:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 213ms (Views: 192.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexadmin" for 127.0.0.1 at 2017-10-06 10:52:00 -0400
+Processing by UsersController#indexadmin as HTML
+  Rendering users/indexadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 229ms (Views: 194.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:52:05 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 239ms (Views: 199.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:53:42 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 278ms (Views: 254.8ms | ActiveRecord: 3.1ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:53:53 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 246ms (Views: 219.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/21/makesuperadmin?class=btn+btn-primary&method=put" for 127.0.0.1 at 2017-10-06 10:54:15 -0400
+Processing by UsersController#makesuperadmin as HTML
+  Parameters: {"class"=>"btn btn-primary", "method"=>"put", "id"=>"21"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (19.1ms)[0m  [1m[33mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", "Super admin"], ["updated_at", "2017-10-06 10:54:15.743547"], ["id", 21]]
+  [1m[35m (78.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/superadmin
+Completed 302 Found in 105ms (ActiveRecord: 98.8ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:54:15 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 226ms (Views: 197.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/indexsuperadmin" for 127.0.0.1 at 2017-10-06 10:54:18 -0400
+Processing by UsersController#indexsuperadmin as HTML
+  Rendering users/indexsuperadmin.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Super admin')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexsuperadmin.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 228ms (Views: 204.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/21" for 127.0.0.1 at 2017-10-06 10:54:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+Completed 200 OK in 239ms (Views: 212.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexadmin" for 127.0.0.1 at 2017-10-06 10:54:23 -0400
+Processing by UsersController#indexadmin as HTML
+  Rendering users/indexadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Admin')[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexadmin.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 251ms (Views: 222.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/superadmin" for 127.0.0.1 at 2017-10-06 10:54:24 -0400
+Processing by UsersController#superadmin as HTML
+  Rendering users/superadmin.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/superadmin.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 225ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:54:30 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 244ms (Views: 201.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:55:54 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 237ms (Views: 206.3ms | ActiveRecord: 1.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/indexcustomers" for 127.0.0.1 at 2017-10-06 10:57:01 -0400
+Processing by UsersController#indexcustomers as HTML
+  Rendering users/indexcustomers.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (role = 'Customer')[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendered users/indexcustomers.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 217ms (Views: 194.2ms | ActiveRecord: 0.5ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/Delicious-Bold.otf"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/logout" for 127.0.0.1 at 2017-10-06 10:57:08 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-10-06 10:57:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 288ms (Views: 252.6ms | ActiveRecord: 0.0ms)
+
+

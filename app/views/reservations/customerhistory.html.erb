@@ -17,9 +17,9 @@
             <td><%= custreservation.user.name %></td>
             <td><%= custreservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
             <td><%= custreservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
-            <% if custreservation.status == true && reservation.current == false %>
+            <% if custreservation.status == true && custreservation.current == false %>
                 <td>Used and returned</td>
-            <% elsif custreservation.status == false && reservation.current == false %>
+            <% elsif custreservation.status == false && custreservation.current == false %>
                 <td>Cancelled</td>
             <% end %>
           </tr>

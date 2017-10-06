@@ -19,13 +19,16 @@
       <%= f.text_field :last_name %>
     </p>
 
+    <% unless (current_user.name == 'Nathen Kick' || current_user.name == 'Stacey Nathen' ) %>
     <p>
       <%= f.label :email %><br>
       <%= f.text_field :email %>
     </p>
+    <% end %>
 
     <% if current_user.id == @user.id %>
-    <p>
+        <% unless (current_user.name == 'Nathen Kick' || current_user.name == 'Stacey Nathen' ) %>
+        <p>
     <%= f.label :password %><br>
     <%= f.password_field :password %>
     </p>
@@ -36,7 +39,7 @@
     </p>
         <% end %>
     <%= f.submit "Apply changes", :class => "btn btn-primary" %>
-
+        <% end %>
         <% end %>
 
 <% if current_user.role == 'Customer' %>

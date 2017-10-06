@@ -7,6 +7,7 @@
     <th>Booked by</th>
     <th>Start time</th>
     <th>End time</th>
+    <th>Utilization</th>
   </tr>
 
   <% if !@custreservations.nil? then @custreservations.each do |custreservation| %>
@@ -16,6 +17,15 @@
             <td><%= custreservation.user.name %></td>
             <td><%= custreservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
             <td><%= custreservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+            <% if (custreservation.status == true && custreservation.current == false) %>
+                <td>Used and checked in</td>
+            <% elsif (custreservation.status == false && custreservation.current == false) %>
+                <td>Cancelled</td>
+            <% elsif (custreservation.status == true && custreservation.current == true) %>
+                <td>Checked out</td>
+            <% elsif (custreservation.status == false && custreservation.current == true) %>
+                <td>Reserved</td>
+            <% end %>
             <% if custreservation.status == false %>
                 <td><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: custreservation, :method => :put, :class => "btn btn-primary" %></td>
                 <td><%= link_to 'Cancal reservation', controller: :reservations, action: :cancel, id: custreservation, :method => :put , :class => "btn btn-primary" %></td>

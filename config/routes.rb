@@ -41,9 +41,11 @@ Rails.application.routes.draw do
 
 
   resources :reservations, :except => [:new, :create, :edit, :update, :show, :destroy] do
+    resources :users
     get :checkout, on: :member
     get :checkin, on: :member
     get :cancel, on: :member
+    get :viewreservations, on: :collection
   end
 
   get '/reservation/new' => 'reservations#new', as: :new_reservation

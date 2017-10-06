@@ -1,0 +1,39 @@
+<h3>Listing reservations history</h3>
+
+
+<table style="width:60%">
+  <tr>
+    <th>Booking number  </th>
+    <th>Car </th>
+    <th>Booked by</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Utilization</th>
+  </tr>
+
+  <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.id %></td>
+        <td><%= reservation.car.car_name %></td>
+        <td><%= reservation.user.name %></td>
+        <td><%= reservation.start_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+        <td><%= reservation.end_time.strftime('%a, %d %b %Y %H:%M:%S') %></td>
+        <% if (reservation.status == true && reservation.current == false) %>
+            <td>Used and checked in</td>
+        <% elsif (reservation.status == false && reservation.current == false) %>
+            <td>Cancelled</td>
+        <% elsif (reservation.status == true && reservation.current == true) %>
+            <td>Checked out</td>
+        <% elsif (reservation.status == false && reservation.current == true) %>
+            <td>Reserved</td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+
+<%  if current_user.role == 'Admin' %>
+    <%= link_to "Back", '/admin', :class => "btn btn-primary" %>
+<% end %>
+<%  if current_user.role == 'Super admin' %>
+    <%= link_to "Back", '/superadmin', :class => "btn btn-primary" %>
+<% end %>

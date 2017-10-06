@@ -7,8 +7,8 @@
     <p>Manufacturer: <%= f.text_field :manufacturer %></p>
     <p>Model: <%= f.text_field :model %></p>
     <p>Style: <%= f.text_field :style %></p>
-    <p>Suggested hourly rate: <%= f.text_field :hourly_rate %></p>
-    <p>Suggested location: <%= f.text_area :location %></p>
+    <p>Hourly rate: <%= f.text_field :hourly_rate %></p>
+    <p>Location: <%= f.text_area :location %></p>
     <% if current_user.role == 'Admin' || current_user.role == 'Super admin' %>
     <p>License plate <%= f.text_field :license_plate %></p>
     <%= f.hidden_field :status, :value => 'Approved' %>
@@ -17,4 +17,5 @@
         <%= f.hidden_field :status, :value => 'Unpproved' %>
     <%= f.submit "Suggest car", :class => "btn btn-primary" %>
         <% end %>
+    <%= link_to "Back to cars menu", cars_path, :class => "btn btn-primary" %>
 <% end %>

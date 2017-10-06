@@ -70,7 +70,7 @@ class UsersController < ApplicationController
   def makesuperadmin
     @user = User.find(params[:id])
     @user.update_attribute(:role, 'Super admin')
-    redirect_to '/indexcustomers'
+    redirect_to '/superadmin'
   end
 
   def edit

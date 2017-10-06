@@ -80,6 +80,11 @@ class ReservationsController < ApplicationController
   end
   end
 
+  def viewreservations
+    @user = User.find(params[:user_id])
+    @reservations = Reservation.where("user_id = :user_id", {user_id: @user.id})
+  end
+
   private
   def reservation_params
     params.require(:reservation).permit(:user_id, :car_id, :start_time, :end_time, :current, :status)

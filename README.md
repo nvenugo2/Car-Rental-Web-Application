@@ -52,7 +52,39 @@ Navigations help - Available tabs
     a) Check out a car - the user can check out a car
     b)Check in a car - the user can check in a car
     c) Cancel a reservation - the user can cancel a reservation
-4)Edit profile - the user can change name, email id, password, 
+4)Edit profile - the user can change name, email id, password.
+
+Admin and Super admin functions
+Navigations help - Available tabs
+1) List cars - List of cars are listed
+    a)Add a car
+    b)delete a car
+    c)view car
+    d)approve cars
+    e)edit existing car
+2) View customers
+    a)Edit customer details
+    b)make as admin
+    c)delete
+    d)view his/her reservations
+3) Reservation history
+4) Current reservation
+    a)Check out car for customer
+    b)Check in car for customer
+    c) Cancel reservation for customer
+5) Edit profile
+6) Book for customer
+7) View admins
+    a) view profile
+    b)delete
+    c) make super admin
+8) View super admins
+
+When a car is booked or reserved, the car can't be deleted so a flash notice will appear
+When a user has booked or reserved a car, the user can't be deleted so a flash notice will appear
+
+   
+
 
 
 
