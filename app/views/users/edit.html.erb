@@ -1,4 +1,8 @@
+<% if (current_user.role == 'Customer' || ((current_user.role == 'Admin' || current_user.role == 'Super admin') && @user.role == 'Customer'))%>
 <h2>Edit customer</h2>
+    <% else %>
+    <h2>Edit profile</h2>
+    <% end %>
 <% if flash[:alert] %>
 <p id ="notice"><%= flash[:alert] %>
   </p>
@@ -20,6 +24,7 @@
       <%= f.text_field :email %>
     </p>
 
+    <% if current_user.id == @user.id %>
     <p>
     <%= f.label :password %><br>
     <%= f.password_field :password %>
@@ -29,8 +34,23 @@
     <%= f.label :password_confirmation %><br><br>
     <%= f.password_field :password_confirmation %>
     </p>
-
+        <% end %>
     <%= f.submit "Apply changes", :class => "btn btn-primary" %>
+
+        <% end %>
+
+<% if current_user.role == 'Customer' %>
+    <%= link_to 'Back', '/customer', :class => "btn btn-primary" %>
+    <% end %>
+<% if (@user.role == 'Customer' && (current_user.role == 'Admin' || current_user.role == 'Super admin'))%>
+    <%= link_to 'Back', '/indexcustomers', :class => "btn btn-primary" %>
+<% end %>
+<% if (current_user.role = 'Admin' && @user.role == 'Admin')%>
+    <%= link_to 'Back', '/admin', :class => "btn btn-primary" %>
+<% end %>
+<% if (current_user.role = 'Super admin' && @user.role == 'Super admin') %>
+    <%= link_to 'Back', '/superadmin', :class => "btn btn-primary" %>
 <% end %>
 
-<%= link_to 'Back', '/indexcustomers', :class => "btn btn-primary" %>
+
+

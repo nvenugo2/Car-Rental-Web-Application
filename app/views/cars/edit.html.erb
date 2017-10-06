@@ -7,6 +7,7 @@
     <p>Location: <%= f.text_area :location %></p>
         <p>License plate <%= f.text_field :license_plate %></p>
         <%= f.hidden_field :status, :value => 'Approved' %>
-        <%= f.submit "Create car!", :class => "btn btn-primary" %>
+        <%= f.submit "Apply changes!", :class => "btn btn-primary" %>
 <% end %>
-    <%= link_to "Back", '/carsforapproval', :class => "btn btn-primary" %>
+    <%= link_to "Back to cars for approval", '/carsforapproval', :class => "btn btn-primary" %>
+<%= link_to "Back to approved cars menu", cars_path, :class => "btn btn-primary" %>

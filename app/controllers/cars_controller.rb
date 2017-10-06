@@ -42,7 +42,8 @@ class CarsController < ApplicationController
   def destroy
     @car = Car.find(params[:id])
     unless Reservation.where("(? = car_id) AND (? = current)", @car.id, true).count == 0
-      flash[:notice] = "The car has been reserved or checked out"
+      redirect_to '/cars'
+      flash[:notice] = "#{@car.car_number_name} The car has been reserved or checked out"
       else
     @car.destroy
       redirect_to '/cars'

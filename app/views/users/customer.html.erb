@@ -1,5 +1,10 @@
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <h3> Welcome <%= current_user.name %></h3>
 
 <%= link_to "List all cars", '/cars', :class => "btn btn-primary" %>
 <%= link_to "Reservations", '/customerhistory', :class => "btn btn-primary" %>
 <%= link_to "Current reservation", '/customercurrentreservation', :class => "btn btn-primary" %>
+<%= link_to "Edit profile", edit_user_path(current_user.id), :class => "btn btn-primary" %>

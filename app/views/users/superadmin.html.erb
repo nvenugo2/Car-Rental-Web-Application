@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <h3> Welcome <%= current_user.name %></h3>
 <div class="container">
 	<ul class="nav nav-tabs">
@@ -8,5 +12,6 @@
 		<li><%= link_to "Book for customer", new_reservation_path, :class => "btn btn-primary" %></li>
 		<li><%= link_to "Reservation history", '/reservationlog', :class => "btn btn-primary" %></li>
 		<li><%= link_to "Current reservation", '/currentreservations', :class => "btn btn-primary" %></li>
-	</ul>
+    <li><%= link_to "Edit profile", edit_user_path(current_user.id), :class => "btn btn-primary" %></li>
+  </ul>
 </div>

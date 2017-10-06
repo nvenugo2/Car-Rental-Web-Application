@@ -45,7 +45,17 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to @user
+      if (current_user.role == 'Customer')
+      redirect_to '/customer'
+      elsif (current_user.role == 'Admin' && @user.role == 'Admin')
+        redirect_to '/admin'
+      elsif (current_user.role == 'Super admin' && @user.role == 'Super admin')
+        redirect_to '/superadmin'
+      elsif (current_user.role == 'Admin' && @user.role == 'Customer')
+        redirect_to '/indexcustomers'
+      elsif (current_user.role == 'Super admin' && @user.role == 'Customer')
+        redirect_to '/indexcustomers'
+       end
     else
       render 'edit'
     end
@@ -71,8 +81,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     role = @user.role
     unless Reservation.where("(? = user_id) AND (? = current)", @user.id, true).count == 0
-      flash[:notice] = "The customer has taken out a car pr reserved a car"
       redirect_to '/indexcustomers'
+      flash[:notice] = "The customer has taken out a car or reserved a car"
     else
     @user.destroy
     if role == 'Customer'

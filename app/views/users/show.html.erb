@@ -1,8 +1,3 @@
-<% if flash[:alert] %>
-<p id ="notice"><%= flash[:alert] %>
-  </p>
-  <% end %>
-
   <p>
   <b>First name:</b>
   <%= @user.first_name %>
@@ -29,7 +24,7 @@
     <%= link_to 'Back', '/indexadmin', :class => "btn btn-primary" %>
 <% end %>
 
-<% if @user.role != 'Customer' %>
+
     <% if @user.role == 'Customer' %>
     <%= link_to "Make admin", controller: :users, action: :makeadmin, id: @user, :method => :put, :class => "btn btn-primary"  %></p>
         <% end %>
@@ -41,4 +36,3 @@
         <% end %>
         <br>
         <%= link_to "Back", :back, :class => "btn btn-primary" %>
-<% end %>

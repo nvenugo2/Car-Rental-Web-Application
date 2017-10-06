@@ -1,3 +1,5 @@
+
+
 <h2>Listing features of <%= @car.manufacturer %> <%= @car.model %></h2>
 <p>Manufacturer: <%= @car.manufacturer %></p>
 <p>Model: <%= @car.model %></p>
@@ -14,5 +16,11 @@
         <% else %>
 <%= link_to "Book this car!", new_reservation_path(:car_id => @car), :class => "btn btn-primary" %>
     <% end %>
+<% if (current_user.role == 'Admin' || current_user.role == 'Super admin') %>
+    <%= link_to 'Edit this car', edit_car_path(@car), :class => "btn btn-primary" %>
+    <% end %>
+
 <% session[:car_id] = @car.id %>
+
+
 
