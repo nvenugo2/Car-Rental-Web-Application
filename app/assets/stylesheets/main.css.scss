@@ -3,7 +3,13 @@ $color: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{background:#000}
+body{
+  background-image: url('https://avante.biz/wp-content/uploads/Rolls-Royce-Wallpaper/Rolls-Royce-Wallpaper-028.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
 
 @font-face {
   font-family: 'Delicious';
@@ -16,3 +22,36 @@ html {font-family: "Delicious";}
 * {
   font-family: "Delicious";
  }
+
+ .navbar-custom {
+    color: #FFFFFF;
+    background-color: #000;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    height: 350px;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background: transparent;
+}
+
+form {
+	width: 300px; 
+	margin:auto; 
+	position: relative; 
+	display: block;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    color: black;
+    border: 1px;
+    padding: 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
