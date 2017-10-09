@@ -3,15 +3,15 @@
 Primary Information
 The URL of our website is https://expresscarrental.herokuapp.com.
 
-The passwords and email ids of the below admin and super admin have been disabled for editing as it may affect other reviewers 
-Preconfigured admin so can't be deleted and can't be changed to super admin.
+# The passwords and email ids of the below admin and super admin have been disabled for editing as it may affect other reviewers 
+# Preconfigured admin so can't be deleted and can't be changed to super admin.
 Admin:  stacey@gmail.com
 Password: root
 
 Superadmin:  nathen@gmail.com
 Password: root
 
-To check the edit/destroy functionalities, you could use the below admin and super admin email id and password, but please do revert back the password and email id:
+# To check the edit/destroy functionalities, you could use the below admin and super admin email id and password, but please do revert back the password and email id:
 Admin:  laurie@gmail.com
 Password: root
 
@@ -81,22 +81,21 @@ Navigations help - Available tabs
     c) make super admin
 8) View super admins
 
-When a car is booked or reserved, the car can't be deleted so a flash notice will appear
-When a user has booked or reserved a car, the user can't be deleted so a flash notice will appear
+# When a car is booked or reserved, the car can't be deleted so a flash notice will appear
+# When a user has booked or reserved a car, the user can't be deleted so a flash notice will appear
 
 When a car is booked or reserved under a user, the user cannot be deleted. A flash notice will
 display, that informs that only after user has returned the car, then the user can be deleted.
-When a car is deleted without return the entire data of the car in the reservation table is
-deleted.
-When user when car gets deleted, the entire data of checkout history of user of that car from
-the table. When a car is deleted, the entire data of for that car in checkout history table of user
-is deleted.
-When user is deleted the entire data of that user is also deleted.
+
+#when a car is deleted, the entire data of the car is deleted, ie. reservations history
+
+# When user is deleted the entire data of that user is also deleted, ie reservation history.
 Admin can delete the user with pending reservations as all the data of user in the reservation
 table is erased once user is deleted.
 Points to be noted:
-1. Admin can view and approve the suggestion from customer and add this car to the
+# 1. Admin can view and approve the suggestion from customer and add this car to the
 application system.
+# 2. Mailer has been implemented
 
 
    
