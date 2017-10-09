@@ -28,7 +28,7 @@
             <% end %>
             <% if custreservation.status == false %>
                 <td><%= link_to 'Check out car', controller: :reservations, action: :checkout, id: custreservation, :method => :put, :class => "btn btn-primary" %></td>
-                <td><%= link_to 'Cancal reservation', controller: :reservations, action: :cancel, id: custreservation, :method => :put , :class => "btn btn-primary" %></td>
+                <td><%= link_to 'Cancel reservation', controller: :reservations, action: :cancel, id: custreservation, :method => :put , :class => "btn btn-primary" %></td>
             <% elsif custreservation.status == true %>
                 <td><%= link_to 'Check in car', controller: :reservations, action: :checkin, id: custreservation, :method => :put, :class => "btn btn-primary" %></td>
             <% end %>
