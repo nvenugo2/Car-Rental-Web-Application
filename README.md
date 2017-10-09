@@ -93,8 +93,7 @@ display, that informs that only after user has returned the car, then the user c
 Admin can delete the user with pending reservations as all the data of user in the reservation
 table is erased once user is deleted.
 Points to be noted:
-# 1. Admin can view and approve the suggestion from customer and add this car to the
-# application system.
+# 1. Admin can view and approve the suggestion from customer and add this car to the application system.
 # 2. Mailer has been implemented
 
 
