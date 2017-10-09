@@ -55,4 +55,7 @@ Rails.application.routes.draw do
   get '/customerhistory' => 'reservations#customerhistory'
   get '/customercurrentreservation' => 'reservations#customercurrentreservation'
   root 'sessions#new'
+
+  resources :notifiers, :except => [:edit, :update, :show, :destroy]
+
 end

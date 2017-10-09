@@ -24,9 +24,11 @@
       <%= link_to "Make super admin", controller: :users, action: :makesuperadmin, id: @user, :method => :put, :class => "btn btn-primary"  %>
         <% end %>
      <% if @user.role == 'Admin' %>
+      <% unless @user.email == 'stacey@gmail.com' %>
             <%= link_to "Make super admin", controller: :users, action: :makesuperadmin, id: @user, :method => :put, :class => "btn btn-primary"  %>
-        <% end %>
-    <% unless @user.role == 'Super admin' %>
+       <% end %>
+      <% end %>
+    <% unless @user.role == 'Super admin' || @user.email == 'stacey@gmail.com' %>
 <%= link_to 'Delete user', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %></p>
         <% end %>
         <br>

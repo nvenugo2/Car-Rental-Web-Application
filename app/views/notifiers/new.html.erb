@@ -1,0 +1,8 @@
+<h2> You will be notified when the car is available again! We appreciate your patience! ;)</h2>
+
+<%= form_for @notifier do |f| %>
+    <%= f.hidden_field :car_id, :value => session[:car_id].to_i %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.hidden_field :status, :value => true %>
+    <%= f.submit "Back to my homepage", :class => "btn btn-primary"  %>
+<% end %>

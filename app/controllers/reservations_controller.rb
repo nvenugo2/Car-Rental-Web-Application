@@ -58,6 +58,13 @@ class ReservationsController < ApplicationController
     @reservation.update_attribute(:current, false)
     @reservation.car.update_attribute(:carstatus, 'Available')
     if current_user.role == 'Customer'
+      @notifiers = Notifier.where("car_id = :car_id and status = :status", {car_id: @reservation.car_id, status: true})
+      @notifiers.each do |notifier|
+        @car = notifier.car
+        @user = notifier.user
+        NotificationMailer.notify_email(@user,@car).deliver
+        notifier.update_attribute(:status,false)
+      end
       redirect_to '/customer'
     elsif current_user.role == 'Admin'
       redirect_to '/admin'
@@ -71,14 +78,23 @@ class ReservationsController < ApplicationController
     @reservation.update_attribute(:current, 0)
     @reservation.update_attribute(:end_time, DateTime.now)
     @reservation.car.update_attribute(:carstatus, 'Available')
+    car_id = @reservation.car_id
     if current_user.role == 'Customer'
-    redirect_to '/customer'
+      @notifiers = Notifier.where("car_id = :car_id and status = :status", {car_id: car_id, status: true})
+      @notifiers.each do |notifier|
+        @car = notifier.car
+        @user = notifier.user
+        NotificationMailer.notify_email(@user,@car).deliver
+        notifier.update_attribute(:status,false)
+           end
+      redirect_to '/customer'
     elsif current_user.role == 'Admin'
       redirect_to '/admin'
     else
       redirect_to '/superadmin'
+    end
   end
-  end
+
 
   def viewreservations
     @user = User.find(params[:user_id])

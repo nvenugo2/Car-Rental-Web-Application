@@ -8,10 +8,12 @@
         <% unless current_user.id == user.id %>
             <p><%= user.first_name %> <%= user.last_name %>    
             <%= link_to "More details", user_path(user), :class => "btn btn-primary" %>
+              <% unless user.email == 'stacey@gmail.com' %>
             <%= link_to "Delete admin", user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-primary" %>
               <%  if current_user.role == 'Super admin' %>
                   <%= link_to "Make superadmin", controller: :users, action: :makesuperadmin, id: user, :method => :put, :class => "btn btn-primary"  %></p>
               <% end %>
+                  <% end %>
                 <% end %>
             <% end %>
 

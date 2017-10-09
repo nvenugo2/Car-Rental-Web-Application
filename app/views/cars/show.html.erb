@@ -21,7 +21,9 @@
 <% if (@car.status == 'Approved') %>
     <%= link_to 'Edit this car', edit_car_path(@car), :class => "btn btn-primary" %>
     <% end %>
-    <% end %>
+<% if (((current_user.role == 'Customer' && @car.carstatus == 'Reserved') || (current_user.role == 'Customer' && @car.carstatus == 'Checked out')))  %>
+    <%= link_to "Notify me!", new_notifier_path(:car_id => @car), :class => "btn btn-primary" %>
+<% end %>
 
 <% session[:car_id] = @car.id %>
 
