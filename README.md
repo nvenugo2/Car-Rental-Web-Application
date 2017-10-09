@@ -87,14 +87,14 @@ Navigations help - Available tabs
 When a car is booked or reserved under a user, the user cannot be deleted. A flash notice will
 display, that informs that only after user has returned the car, then the user can be deleted.
 
-#when a car is deleted, the entire data of the car is deleted, ie. reservations history
+# when a car is deleted, the entire data of the car is deleted, ie. reservations history
 
 # When user is deleted the entire data of that user is also deleted, ie reservation history.
 Admin can delete the user with pending reservations as all the data of user in the reservation
 table is erased once user is deleted.
 Points to be noted:
 # 1. Admin can view and approve the suggestion from customer and add this car to the
-application system.
+# application system.
 # 2. Mailer has been implemented
 
 
