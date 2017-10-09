@@ -4,7 +4,7 @@ Primary Information
 The URL of our website is https://expresscarrental.herokuapp.com.
 
 # The passwords and email ids of the below admin and super admin have been disabled for editing as it may affect other reviewers 
-# Preconfigured admin so can't be deleted and can't be changed to super admin.
+# Preconfigured admin can't be deleted and can't be changed to super admin.
 Admin:  stacey@gmail.com
 Password: root
 
