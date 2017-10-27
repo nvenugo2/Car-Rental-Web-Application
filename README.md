@@ -1,5 +1,7 @@
 # README
 
+# Though the commits were done from one user account, the contributions to the project were done by all the teammates. Functionalities implementations were shared and then later integrated integrated.
+
 Primary Information
 The URL of our website is https://expresscarrental.herokuapp.com.
 
